@@ -15,7 +15,7 @@ ESVN_REPO_URI="svn://svn.openttd.org/trunk"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE="32bpp aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity +truetype zlib"
 
 DEPEND="
@@ -95,11 +95,12 @@ src_configure() {
 		--man-dir=/usr/share/man/man6 \
 		--doc-dir=/usr/share/doc/${PF} \
 		--menu-group="Game;Simulation;" \
+		--distcc \
 		${myopts} \
 		$(use_with iconv) \
 		$(use_with png) \
 		$(use_with lzo liblzo2) \
-		|| die "configure failed"
+		|| die
 }
 
 src_compile() {
@@ -108,17 +109,25 @@ src_compile() {
 
 src_test() {
 	vecho ">>> Test phase [test]: ${CATEGORY}/${PF}"
-	emake -j1 test || die "Make test failed. See above for details."
+	emake -j1 test || die
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	emake DESTDIR="${D}" install || die
 	if use dedicated ; then
 		newinitd "${FILESDIR}"/${PN}.initd ${PN}
 		rm -rf "${D}"/usr/share/{applications,icons,pixmaps}
 	fi
-	rm -f "${D}"/usr/share/doc/${PF}/COPYING
-	prepalldocs
+	rm -f "${D}"/usr/share/doc/${PF}/*
+	dodoc readme.txt
+	dodoc known-bugs.txt
+	dodoc doc/admin_network.txt
+	dodoc doc/multiplayer.txt
+	if use 32bpp ; then
+		dodoc doc/32bpp.txt
+	fi
+	doman docs/openttd.6
+
 	prepgamesdirs
 }
 

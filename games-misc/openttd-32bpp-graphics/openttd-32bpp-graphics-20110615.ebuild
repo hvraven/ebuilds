@@ -21,7 +21,7 @@ http://jupix.info/openttd/gfxdev-nightlies/files/32bit-gfx-nightly-megapack-${MY
 -> ${P}-dev.tar )
 "
 
-LICENSE="GPL 2.0"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="dev"

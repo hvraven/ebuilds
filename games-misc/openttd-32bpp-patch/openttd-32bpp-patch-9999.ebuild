@@ -14,7 +14,7 @@ EHG_REPO_URI="http://mz.openttdcoop.org/hg/32bpp-extra"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND=""
