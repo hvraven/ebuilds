@@ -7,16 +7,14 @@ inherit eutils games subversion
 
 DESCRIPTION="OpenTTD is a clone of Transport Tycoon Deluxe"
 HOMEPAGE="http://www.openttd.org/"
-SRC_URI="32bpp? (
-http://dev.openttdcoop.org/projects/32bpp-ez-patches/repository/raw/ez.diff ->
-${PN}-32bpp-zoom.patch )"
+SRC_URI=""
 
 ESVN_REPO_URI="svn://svn.openttd.org/trunk"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="32bpp aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity +truetype zlib"
+IUSE="aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity +truetype zlib"
 
 DEPEND="
 	!dedicated? (
@@ -31,7 +29,6 @@ DEPEND="
 	lzo? ( dev-libs/lzo:2 )
 	iconv? ( virtual/libiconv )
 	png? ( media-libs/libpng )
-	zlib? ( sys-libs/zlib )
 	"
 RDEPEND="
 	!dedicated? (
@@ -43,10 +40,6 @@ RDEPEND="
 		!aplaymidi? ( timidity? ( media-sound/timidity++ ) )
 	)
 	openmedia? ( >=games-misc/opengfx-0.3 )
-	32bpp? ( 
-		games-misc/openttd-32bpp-graphics
-		games-misc/openttd-32bpp-patch
-	)
 	"
 
 src_configure() {
@@ -95,7 +88,6 @@ src_configure() {
 		--man-dir=/usr/share/man/man6 \
 		--doc-dir=/usr/share/doc/${PF} \
 		--menu-group="Game;Simulation;" \
-		--distcc \
 		${myopts} \
 		$(use_with iconv) \
 		$(use_with png) \
