@@ -29,23 +29,42 @@ IUSE="dev"
 DEPEND="app-arch/tar"
 RDEPEND="${DEPEND}"
 
-src_install() {
-	rm sprites/openttd* sprites/trg*
-	insinto "${GAMES_DATADIR}"/openttd/data/
-	doins -r sprites || die
-	dodoc readme.txt || die
+src_unpack() {
+	if use dev ; then
+		cp "${DISTDIR}/${P}-dev.tar" "${WORKDIR}"
+		cd "${WORKDIR}"
+		tar xf "${P}-dev.tar" readme.txt
+		tar --delete -f "${P}-dev.tar" readme.txt
+	else
+		cp "${DISTDIR}/${P}.tar" "${WORKDIR}"
+		cd "${WORKDIR}"
+		tar xf "${P}.tar" readme.txt
+		tar --delete -f "${P}.tar" readme.txt
+	fi
+}
 
-	dosym ogfxe_extra "${GAMES_DATADIR}"/openttd/data/sprites/openttdd || die
-	dosym ogfxe_extra "${GAMES_DATADIR}"/openttd/data/sprites/openttdw || die
-	dosym ogfx1_base "${GAMES_DATADIR}"/openttd/data/sprites/trg1 || die
-	dosym ogfx1_base "${GAMES_DATADIR}"/openttd/data/sprites/trg1r || die
-	dosym ogfxc_arctic "${GAMES_DATADIR}"/openttd/data/sprites/trgc || die
-	dosym ogfxc_arctic "${GAMES_DATADIR}"/openttd/data/sprites/trgcr || die
-	dosym ogfxh_tropical "${GAMES_DATADIR}"/openttd/data/sprites/trgh || die
-	dosym ogfxh_tropical "${GAMES_DATADIR}"/openttd/data/sprites/trghr || die
-	dosym ogfxi_logos "${GAMES_DATADIR}"/openttd/data/sprites/trgi || die
-	dosym ogfxi_logos "${GAMES_DATADIR}"/openttd/data/sprites/trgir || die
-	dosym ogfxt_toyland "${GAMES_DATADIR}"/openttd/data/sprites/trgt || die
-	dosym ogfxt_toyland "${GAMES_DATADIR}"/openttd/data/sprites/trgtr || die
+src_install() {
+#	rm sprites/openttd* sprites/trg*
+	insinto "${GAMES_DATADIR}"/openttd/data/
+#	doins -r sprites || die
+	dodoc readme.txt || die
+	if use dev ; then
+		doins "${P}-dev.tar" || die
+	else
+		doins "${P}.tar" || die
+	fi
+#
+#	dosym ogfxe_extra "${GAMES_DATADIR}"/openttd/data/sprites/openttdd || die
+#	dosym ogfxe_extra "${GAMES_DATADIR}"/openttd/data/sprites/openttdw || die
+#	dosym ogfx1_base "${GAMES_DATADIR}"/openttd/data/sprites/trg1 || die
+#	dosym ogfx1_base "${GAMES_DATADIR}"/openttd/data/sprites/trg1r || die
+#	dosym ogfxc_arctic "${GAMES_DATADIR}"/openttd/data/sprites/trgc || die
+#	dosym ogfxc_arctic "${GAMES_DATADIR}"/openttd/data/sprites/trgcr || die
+#	dosym ogfxh_tropical "${GAMES_DATADIR}"/openttd/data/sprites/trgh || die
+#	dosym ogfxh_tropical "${GAMES_DATADIR}"/openttd/data/sprites/trghr || die
+#	dosym ogfxi_logos "${GAMES_DATADIR}"/openttd/data/sprites/trgi || die
+#	dosym ogfxi_logos "${GAMES_DATADIR}"/openttd/data/sprites/trgir || die
+#	dosym ogfxt_toyland "${GAMES_DATADIR}"/openttd/data/sprites/trgt || die
+#	dosym ogfxt_toyland "${GAMES_DATADIR}"/openttd/data/sprites/trgtr || die
 	prepgamesdirs
 }
