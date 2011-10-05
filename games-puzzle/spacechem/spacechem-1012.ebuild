@@ -12,7 +12,7 @@ SRC_URI="SpaceChem-${PV}-hib.tar.gz"
 
 LICENSE="commercial"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86 ~amd64 -*"
 IUSE=""
 
 DEPEND=""

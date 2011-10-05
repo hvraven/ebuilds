@@ -12,11 +12,11 @@ SRC_URI="http://collinarnold.net/zachtronics/SpaceChemDemo-${PV}.tar.gz"
 
 LICENSE="commercial"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86 ~amd64 -*"
 IUSE=""
 
 DEPEND=""
-RDEPEND=""
+RDEPEND="dev-lang/mono"
 
 src_unpack() {
 	unpack "${A}" || die
