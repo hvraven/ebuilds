@@ -13,7 +13,6 @@ HOMEPAGE="http://spacechemthegame.com"
 SRC_URI="${MY_PN}-${PV}-hib.tar.gz"
 RESTRICT="fetch"
 
-
 LICENSE="commercial"
 SLOT="0"
 KEYWORDS="~amd64"
@@ -38,7 +37,9 @@ src_unpack() {
 
 src_install() {
 	insinto /
-	doins -r opt
-	doins -r usr
-	dosym "zachtronicsindustries-spacechem" /usr/bin/spacechem
+	doins -r opt || die
+	dogamesbin "${S}"/usr/bin/zachtronicsindustries-spacechem || die
+	dosym "zachtronicsindustries-spacechem" ${GAMES_BINDIR}/spacechem
+
+	prepgamesdirs
 }
