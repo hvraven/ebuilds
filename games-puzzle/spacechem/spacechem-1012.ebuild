@@ -35,7 +35,7 @@ src_unpack() {
 }
 
 src_install() {
-	make_desktop_entry "${PN}" "SpaceChem" "${PN}.png" "Game"
+	make_desktop_entry "${PN}" "SpaceChem" "${PN}" "Game"
 	newicon opt/zachtronicsindustries/${PN}/icon.png "${PN}".png
 	mv opt "${ED}${GAMES_PREFIX_OPT}" || die
 	dosym "${GAMES_PREFIX_OPT}/zachtronicsindustries/${PN}/spacechem-launcher.sh" "${GAMES_BINDIR}/${PN}" || die
