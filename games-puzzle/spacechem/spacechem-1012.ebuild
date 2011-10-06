@@ -4,19 +4,21 @@
 
 EAPI=3
 
-inherit games
+inherit games eutils
 
 DESCRIPTION="puzzle game with atoms and molecules"
 HOMEPAGE="http://spacechemthegame.com"
 SRC_URI="SpaceChem-${PV}-hib.tar.gz"
 
-LICENSE="commercial"
+LICENSE=${PN}
 SLOT="0"
 KEYWORDS="~x86 ~amd64 -*"
 IUSE=""
 
 DEPEND=""
-RDEPEND="dev-lang/mono"
+RDEPEND="dev-lang/mono
+media-libs/libsdl
+x11-misc/xclip"
 
 RESTRICT="fetch"
 
@@ -33,6 +35,8 @@ src_unpack() {
 }
 
 src_install() {
+	make_desktop_entry "${PN}" "SpaceChem" "${PN}.png" "Game"
+	newicon opt/zachtronicsindustries/${PN}/icon.png "${PN}".png
 	mv opt "${ED}${GAMES_PREFIX_OPT}" || die
 	dosym "${GAMES_PREFIX_OPT}/zachtronicsindustries/${PN}/spacechem-launcher.sh" "${GAMES_BINDIR}/${PN}" || die
 	dodoc README || die
