@@ -17,15 +17,12 @@ DEPEND="app-arch/tar
 app-arch/bzip2"
 RDEPEND="${DEPEND}"
 
-REVISION="bf16fab6c907"
-
 src_unpack() {
-	mkdir -p "${WORKDIR}" || die
-	cd "${WORKDIR}"
-	tar xf "${DISTDIR}"/${P}.tar.bz2 || die
-	mv jwilk-${PN}-${REVISION} ${P} || die
+	unpack ${A} || die
+	mv jwilk-${PN}-* ${P} || die
 }
 
 src_install() {
-	dobin hungrycat
+	dobin hungrycat || die
+	dodoc doc/{README,changelog} || die
 }
