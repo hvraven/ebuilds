@@ -79,7 +79,7 @@ src_install() {
 	insinto /$(get_libdir)/rcscripts/addons
 	newins "${FILESDIR}"/1.1.3-dm-crypt-start.sh dm-crypt-start.sh || die
 	newins "${FILESDIR}"/1.1.3-dm-crypt-stop.sh dm-crypt-stop.sh || die
-	newconfd "${FILESDIR}"/1.0.6-dmcrypt.confd dmcrypt || die
+	newconfd "${FILESDIR}"/1.4.1-dmcrypt.confd dmcrypt || die
 	newinitd "${FILESDIR}"/1.0.5-dmcrypt.rc dmcrypt || die
 }
 

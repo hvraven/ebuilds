@@ -37,7 +37,7 @@
 # key='</path/to/keyfile>[:<mode>]'  == Fullpath from / or from inside removable media.
 # remdev='<dev>'                     == Device that will be assigned to removable media.
 # gpg_options='<opts>'               == Default are --quiet --decrypt
-# options='<opts>'                   == cryptsetup, for LUKS you can only use --readonly
+# options='<opts>'                   == cryptsetup, for LUKS you can only use --readonly and --enable-discards (for trim-support, with possible security risk)
 # loop_file='<file>'                 == Loopback file.
 # pre_mount='cmds'                   == commands to execute before mounting partition.
 # post_mount='cmds'                  == commands to execute after mounting partition.
