@@ -38,3 +38,9 @@ src_prepare() {
 		-e "s/'COPYING.txt', //" \
 		-i setup.py || die
 }
+
+src_install() {
+	distutils_src_install
+	insinto /usr/share/${P}
+	doins ${FILESDIR}/terrain.png
+}
