@@ -13,7 +13,7 @@ SRC_URI="http://binaries.openttd.org/releases/${MY_PV}/${MY_P}-source.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~arm ppc ~ppc64 x86"
+KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 IUSE="aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity +truetype zlib"
 
 DEPEND="
@@ -39,7 +39,7 @@ PDEPEND="
 		aplaymidi? ( media-sound/alsa-utils )
 		!aplaymidi? ( timidity? ( media-sound/timidity++ ) )
 	)
-	openmedia? ( games-misc/opengfx )
+	openmedia? ( >=games-misc/opengfx-0.4.4 )
 	"
 #PATCHES=( "${FILESDIR}"/${P}-cflags.patch )
 
