@@ -11,11 +11,12 @@ HOMEPAGE="http://wiki.openttdcoop.org/GRF"
 SRC_URI="http://bundles.openttdcoop.org/grfpack/releases/${PV}/ottdc_grfpack_${PV}.tar.gz
 -> ${P}.tar.gz"
 
-LICENSE="unknown"
+LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~ppc ~x86"
 IUSE=""
 
+RESTRICT="mirror primaryuri"
 DEPEND=""
 RDEPEND="${DEPEND}"
 
