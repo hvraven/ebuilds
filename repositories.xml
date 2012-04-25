@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[lorem_ipsum]]></name>
+    <description lang="en"><![CDATA[lorem_ipsum's ebuild collection]]></description>
+    <homepage>https://github.com/lorem-ipsum/ebuilds</homepage>
+    <owner type="person">
+      <email>hendrik@consetetur.de</email>
+      <name><![CDATA[Hendrik v. Raven]]></name>
+    </owner>
+    <source type="git">git://github.com/lorem-ipsum/ebuilds.git</source>
+    <feed>https://lorem-ipsum@github.com/lorem-ipsum/ebuilds/commits/master.atom</feed>
+  </repo>
+</repositories>
