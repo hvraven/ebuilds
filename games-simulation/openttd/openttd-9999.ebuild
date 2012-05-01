@@ -39,8 +39,15 @@ RDEPEND="
 		aplaymidi? ( media-sound/alsa-utils )
 		!aplaymidi? ( timidity? ( media-sound/timidity++ ) )
 	)
-	openmedia? ( >=games-misc/opengfx-0.3 )
+	openmedia? ( games-misc/opengfx )
 	"
+
+src_prepare() {
+	subversion_src_prepare
+	# fix to help the automatic revision detection
+	echo "r${ESVN_WC_REVISION}	${ESVN_WC_REVISION}	0	r${ESVN_WC_REVISION}" \
+		> "${S}/.ottdrev"
+}
 
 src_configure() {
 	# there is an allegro interface available as well as sdl, but
@@ -69,10 +76,6 @@ src_configure() {
 	else
 		myopts="${myopts} --without-zlib"
 	fi
-
-	# automatic revision detection failes because the .svn is missing at
-	# WORKDIR, so we add it manually
-	myopts="${myopts} --revision=${ESVN_WC_REVISION}"
 
 	# configure is a hand-written bash-script, so econf will not work.
 	# It's all built as C++, upstream uses CFLAGS internally.
@@ -115,9 +118,6 @@ src_install() {
 	dodoc known-bugs.txt
 	dodoc doc/admin_network.txt
 	dodoc doc/multiplayer.txt
-	if use 32bpp ; then
-		dodoc doc/32bpp.txt
-	fi
 	doman docs/openttd.6
 
 	prepgamesdirs
