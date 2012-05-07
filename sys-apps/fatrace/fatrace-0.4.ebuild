@@ -18,7 +18,7 @@ IUSE="powertop"
 RDEPEND="powertop? ( =sys-power/powertop-1.13
 	dev-lang/python )"
 
-CONFIG_CHECK="~FANOTIFY"
+CONFIG_CHECK="FANOTIFY"
 
 DOC="NEWS"
 
