@@ -24,7 +24,7 @@ src_prepare() {
 	if use powertop ; then
 		sed -e "s/powertop-1.13/powertop/g" \
 			-i "${S}"/power-usage-report || die
-	fi"
+	fi
 }
 
 src_install() {
@@ -32,5 +32,5 @@ src_install() {
 	use powertop && dosbin power-usage-report
 
 	doman fatrace.1
-	dodoc NEWS	
+	dodoc NEWS
 }
