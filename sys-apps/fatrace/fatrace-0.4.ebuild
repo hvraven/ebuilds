@@ -4,7 +4,8 @@
 
 EAPI=4
 
-inherit linux-info
+PYTHON_DEPEND="powertop? *"
+inherit linux-info python
 
 DESCRIPTION="report file access events from all running processes"
 HOMEPAGE="https://launchpad.net/fatrace"
@@ -12,23 +13,24 @@ SRC_URI="https://launchpad.net/${PN}/trunk/${PV}/+download/${P}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="powertop"
 
-RDEPEND="powertop? ( =sys-power/powertop-1.13
-	dev-lang/python )"
+RDEPEND="powertop? ( =sys-power/powertop-1.13 )"
 
 CONFIG_CHECK="FANOTIFY"
 
-DOC="NEWS"
-
 src_prepare() {
-	use powertop && (sed -i "s/powertop-1.13/powertop/g" \
-		"${S}/power-usage-report" || die)
+	if use powertop ; then
+		sed -e "s/powertop-1.13/powertop/g" \
+			-i "${S}"/power-usage-report || die
+	fi"
 }
 
 src_install() {
-	dosbin fatrace || die
-	doman fatrace.1 || die
-	use powertop && (dosbin power-usage-report || die)
+	dosbin fatrace
+	use powertop && dosbin power-usage-report
+
+	doman fatrace.1
+	dodoc NEWS	
 }
