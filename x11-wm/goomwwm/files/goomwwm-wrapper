@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -f ~/.goomwwmrc ] && source  ~/.goomwwmrc
+
+exec goomwwm.real ${GOOMWWM_ARGS}
