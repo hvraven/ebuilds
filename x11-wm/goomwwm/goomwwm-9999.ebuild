@@ -23,13 +23,12 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
 	tc-export CC
-	export LDADD=$(pkg-config --cflags --libs x11 xinerama xft)
-	sed -e 's:\($(LDADD)\) \(-o goomwwm\):\1 $(LDFLAGS) \2:' \
-		-i Makefile || die
 }
 
 src_install() {
+	newbin goomwwm goomwwm.real
+	newbin "${FILESDIR}"/goomwwm-wrapper goomwwm
+
 	doman goomwwm.1
-	dodoc README.md
-	dobin goomwwm
+	dodoc README.md "${FILESDIR}"/goomwwmrc
 }
