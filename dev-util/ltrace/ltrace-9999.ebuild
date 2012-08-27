@@ -13,7 +13,7 @@ EGIT_REPO_URI="http://anonscm.debian.org/git/collab-maint/ltrace.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="test"
 
 RDEPEND="dev-libs/elfutils"
