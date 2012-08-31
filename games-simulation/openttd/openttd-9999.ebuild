@@ -42,6 +42,8 @@ RDEPEND="
 	openmedia? ( games-misc/opengfx )
 	"
 
+PATCHES=( "${FILESDIR}"/${P}-cflags.patch )
+
 src_prepare() {
 	subversion_src_prepare
 	# fix to help the automatic revision detection
@@ -116,8 +118,8 @@ src_install() {
 	rm -f "${D}"/usr/share/doc/${PF}/*
 	dodoc readme.txt
 	dodoc known-bugs.txt
-	dodoc doc/admin_network.txt
-	dodoc doc/multiplayer.txt
+	dodoc docs/admin_network.txt
+	dodoc docs/multiplayer.txt
 	doman docs/openttd.6
 
 	prepgamesdirs
