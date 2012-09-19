@@ -1,0 +1,193 @@
+END USER LICENSE AGREEMENT
+
+Prodigy Design Ltd. Software License Agreement
+
+
+1. READ THE FOLLOWING TERMS AND CONDITIONS CAREFULLY BEFORE INSTALLING THIS 
+SOFTWARE ON YOUR PERSONAL COMPUTER OR CONSOLE GAME FOR ONLINE USE. THIS 
+SOFTWARE LICENSE AGREEMENT IS A LEGAL AGREEMENT BETWEEN YOU (AN INDIVIDUAL 
+OR A SINGLE ENTITY "YOU") ON THE ONE HAND, AND PRODIGY DESIGN LTD. AND ITS 
+SUBSIDIARIES AND AFFILIATES (COLLECTIVELY REFERRED TO AS "PRODIGY DESIGN 
+LTD.") ON THE OTHER HAND, FOR THE SOFTWARE PRODUCT ENTITLED "SHATTER" WHICH 
+INCLUDES COMPUTER SOFTWARE AND ANY ASSOCIATED MEDIA, PRINTED MATERIALS, 
+AND/OR "ONLINE" OR ELECTRONIC DOCUMENTATION (TOGETHER CALLED THE 
+"SOFTWARE"). BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE (OR, 
+IN THE EVENT YOU HAVE PURCHASED THE SOFTWARE AS CONTAINED ON A CD-ROM, BY 
+OPENING THE PACKAGING MATERIALS THEREOF), YOU ACKNOWLEDGE THAT YOU HAVE 
+READ THIS SOFTWARE LICENSE AGREEMENT AND AGREE TO BE BOUND BY ITS TERMS. 
+THE SOFTWARE IS LICENSED, NOT SOLD, TO YOU FOR USE ONLY UNDER THE TERMS OF 
+THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS SOFTWARE LICENSE 
+AGREEMENT, DO NOT INSTALL OR USE THE SOFTWARE AND DELETE ALL COPIES IN YOUR 
+POSSESSION. 
+
+2. Subject to the terms of this Agreement, Prodigy Design Ltd. grants You a 
+non-exclusive, non-transferable license to use one copy of the Software 
+and/or to use the Software for play online in the country in which You 
+acquired the Software for Your own personal, non-commercial use, but 
+retains all property rights in the Software and all copies thereof. All 
+other rights are expressly reserved by Prodigy Design Ltd. or its 
+Licensors. There is no license to download game content other than what is 
+necessary to facilitate game play. You may: (i) use the Software on any 
+supported computer configuration and/or console platform, provided the 
+Software is used on only one (1) such computer; and (ii) permanently 
+transfer the Software on any supported computer configuration only and its 
+documentation to another user provided You retain no copies and the 
+recipient agrees to the terms of this Agreement. You may not transfer, 
+distribute, rent, sub-license, or lease the Software or documentation, 
+except as provided herein; or alter, modify, or adapt the Product or 
+documentation, or any portions thereof. 
+
+3. You acknowledge that the Software in source code form remains a 
+confidential trade secret of Prodigy Design Ltd. You agree not to modify or 
+attempt to reverse engineer, decompile, or disassemble the Software, except 
+and only to the extent that such activity is expressly permitted by 
+applicable law notwithstanding this limitation. You further acknowledge 
+that the Software contains functions for collecting and tracking 
+information related to Your use of the Software. Prodigy Design Ltd. 
+reserves the right to compile, save and use such information within the 
+scope of Prodigy Design Ltd.’s business activities, and analyze any and all 
+of Your data (online registration data, stats, etc.). Prodigy Design 
+Ltd.intends to use such data for internal purposes only. 
+
+4. OWNERSHIP: All right, title and interest and intellectual property 
+rights in and to the Software (including but not limited to any titles, 
+computer code, themes, objects, characters, character names, stories, 
+dialog, catch phrases, locations, concepts, artwork, images, photographs, 
+animations, video, sounds, audio-visual effects, music, musical 
+compositions, text and "applets," incorporated into the Software), the 
+accompanying printed materials, and any copies of the Software, are owned 
+by PRODIGY DESIGN LTD or its licensors. This Agreement grants You no rights 
+to use such content other than as part of the Software. All rights not 
+expressly granted under this Agreement are reserved by Prodigy Design Ltd. 
+
+5. This Agreement is effective upon Your installation of the Software and 
+shall continue until revoked by Prodigy Design Ltd. or until You breach any 
+term hereof; upon termination You agree to destroy and/or delete all copies 
+of the Software in Your possession. 
+
+6. You shall not modify the Software or merge the Software into another 
+computer Program (except to the extent the Software is made to operate 
+within a computer operating system and in connection with other computer 
+program) or create derivative works based upon the Software. 
+
+7. You are responsible for assessing Your own computer and the results to 
+be obtained therefrom. YOU EXPRESSLY AGREE THAT USE OF THE SOFTWARE IS AT 
+YOUR SOLE RISK. THE SOFTWARE IS PROVIDED ON AN "AS IS," "AS AVAILABLE" 
+BASIS, UNLESS SUCH WARRANTIES ARE LEGALLY INCAPABLE OF EXCLUSION. PRODIGY 
+DESIGN LTD. AND ITS LICENSORS DISCLAIM ALL WARRANTIES AND CONDITIONS, 
+WHETHER ORAL OR WRITTEN, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION 
+ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE, NON-INFRINGEMENT OF THIRD PARTY RIGHTS, AND THOSE 
+ARISING FROM A COURSE OF DEALING OR USAGE OF TRADE, REGARDING THE SOFTWARE. 
+PRODIGY DESIGN LTD. AND ITS LICENSORS ASSUME NO RESPONSIBILITY FOR ANY 
+DAMAGES SUFFERED BY YOU, INCLUDING, BUT NOT LIMITED TO, LOSS OF DATA, ITEMS 
+OR OTHER MATERIALS FROM ERRORS OR OTHER MALFUNCTIONS CAUSED BY PRODIGY 
+DESIGN LTD, ITS LICENSORS, LICENSEE AND/OR SUBCONTRACTORS, OR BY YOUR OR 
+ANY OTHER PARTICIPANT'S OWN ERRORS AND/OR OMISSIONS. Prodigy Design Ltd. 
+and its licensors make no warranty with respect to any related software or 
+hardware used or provided by Prodigy Design Ltd. in connection with the 
+Software except as may be expressly set forth above. 
+
+
+8. LIMITATION OF LIABILITY. YOU ACKNOWLEDGE AND AGREE THAT PRODIGY DESIGN 
+LTD. AND ITS LICENSORS SHALL NOT ASSUME OR HAVE ANY LIABILITY FOR ANY 
+ACTION BY PRODIGY DESIGN LTD. OR ITS CONTENT PROVIDERS, OTHER PARTICIPANTS 
+OR OTHER LICENSORS WITH RESPECT TO CONDUCT, COMMUNICATION OR CONTENT OF THE 
+SOFTWARE. PRODIGY DESIGN LTD. AND ITS LICENSORS SHALL NOT BE LIABLE FOR ANY 
+INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL 
+DAMAGES RESULTING FROM POSSESSION, USE, OR MALFUNCTION OF THE SOFTWARE, 
+INCLUDING DAMAGES TO PROPERTY, LOSS OF GOODWILL, COMPUTER FAILURE OR 
+MALFUNCTION AND, TO THE EXTENT PERMITTED BY LAW, DAMAGES FOR PERSONAL 
+INJURIES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. EXCEPT AS 
+EXPRESSLY PROVIDED HEREIN, PRODIGY DESIGN LTD'S AND ITS LICENSORS’ ENTIRE 
+LIABILITY TO YOU AND YOUR EXCLUSIVE REMEDY FOR ANY BREACH OF THIS AGREEMENT 
+IS LIMITED SOLELY TO THE TOTAL AMOUNT PAID BY YOU FOR THE SOFTWARE, IF ANY. 
+BECAUSE SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY 
+FOR CERTAIN DAMAGES, IN SUCH STATES PRODIGY DESIGN LTD'S AND ITS LICENSORS’ 
+LIABILITY IS LIMITED TO THE EXTENT PERMITTED BY LAW. 
+
+9. INJUNCTION. Because Prodigy Design Ltd. would be irreparably damaged if 
+the terms of this License Agreement were not specifically enforced, You 
+agree that Prodigy Design Ltd. shall be entitled, without bond, other 
+security or proof of damages, to appropriate equitable remedies with 
+respect to breaches of this Agreement, in addition to such other remedies 
+as Prodigy Design Ltd. may otherwise have under applicable laws. 
+
+10. INDEMNITY. At Prodigy Design Ltd's request, You agree to defend, 
+indemnify and hold harmless Prodigy Design Ltd, its subsidiaries, 
+affiliates, contractors, officers, directors, employees, agents, licensors, 
+licensees, distributors, developers, content providers, and other users of 
+the Software, from all damages, losses, liabilities, claims and expenses, 
+including attorneys' fees, arising directly or indirectly from Your acts 
+and omissions to act in using the Software pursuant to the terms of this 
+License Agreement or any breach of this License Agreement by You. Prodigy 
+Design Ltd. reserves the right, at its own expense, to assume the exclusive 
+defence and control of any matter otherwise subject to indemnification by 
+You hereunder, and in such event, You shall have no further obligation to 
+provide indemnification for such matter. 
+
+
+11. TERMINATION. Without prejudice to any other rights of Prodigy Design 
+Ltd, this License Agreement and Your right to use the Software may 
+automatically terminate without notice from Prodigy Design Ltd. if You fail 
+to comply with any provision of this Agreement or any terms and conditions 
+associated with the Software. In such event, You must destroy all copies of 
+this Software and all of its component parts. 
+
+
+12. ONLINE. Prodigy Design Ltd. makes no guarantees regarding the 
+availability of online play, and may modify or discontinue online service 
+in its discretion without notice, including, for example, ceasing online 
+service for economic reasons due to a limited number of players continuing 
+to make use of the service over time. Should You use the online version of 
+this game we will not ask You for any personally identifying information. 
+You should avoid saying anything personally identifying in chat. You agree 
+that Prodigy Design Ltd. has no liability for any violation of this 
+Agreement by You or by any other player. When You play, You agree to be 
+respectful of Your fellow players and never to engage in any behavior that 
+would be abusive or offensive to other players, disruptive of the game 
+experience, fraudulent or otherwise illegal. This includes but is not 
+limited to: 
+
+(a) Harassing or intimidating other players while chatting or playing this 
+game online or using information obtained while chatting or playing this 
+game to harass or intimidate fellow players outside of the game; 
+
+(b) Using language, selecting names or creating any other content that is 
+racially, ethnically or religiously offensive, sexually abusive, obscene or 
+defamatory, and any content that is commercial in nature such as 
+advertisements, solicitations and promotions for goods or services; 
+
+(c) Using a player name that is the real name of any other person; 
+
+(d) Violating any local, state or national law including but not limited to 
+laws related to copyright, trademark, defamation, invasion of privacy and 
+identity theft. 
+
+13. GENERAL PROVISIONS. You may not use, copy, modify, sublicense, rent, 
+sell, assign or transfer the rights or obligations granted to You in this 
+Agreement, except as expressly provided in this Agreement. Any assignment 
+in violation of this Agreement is void, except that You may transfer Your 
+Software to another person provided that person accepts the terms of this 
+License Agreement. If any provision of this Agreement is held to be 
+unenforceable for any reason, such provision shall be reformed only to the 
+extent necessary to make it enforceable, and such decision shall not affect 
+the enforceability of: (i) such provision under other circumstances, or 
+(ii) the remaining provisions hereof under all circumstances. Prodigy 
+Design Ltd's failure to enforce at any time any of the provisions of this 
+Agreement shall in no way be construed to be a present or future waiver of 
+such provisions, nor in any way affect the right of any party to enforce 
+each and every such provision thereafter. The express waiver by Prodigy 
+Design Ltd. of any provision, condition or requirement of this Agreement 
+shall not constitute a waiver of any future obligation to comply with such 
+provision, condition or requirement. Notwithstanding anything else in this 
+Agreement, no default, delay or failure to perform on the part of Prodigy 
+Design Ltd. shall be considered a breach of this Agreement if such default, 
+delay or failure to perform is shown to be due to causes beyond the 
+reasonable control of Prodigy Design Ltd. This Agreement shall be governed 
+by the laws of New Zealand without regard to its conflicts of laws rules 
+and You consent to the exclusive jurisdiction of New Zealand. The United 
+Nations Convention on Contracts for the International Sale of Goods shall 
+not apply to this Agreement. This Agreement represents the complete 
+agreement concerning this License Agreement between You and Prodigy Design 
+Ltd. 
