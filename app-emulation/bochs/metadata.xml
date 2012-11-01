@@ -4,6 +4,8 @@
 <use>
 <flag name="avx">Enable support for Advanced Vector Extensions (AVX)</flag>
 <flag name="debugger">Enable debugger (slows down emulation)</flag>
+<flag name="gdb">Enable support for the remote GDB stub.</flag>
+<flag name="x86-64">Enable support for emulation of 64-bit CPUs</flag>
 </use>
 </pkgmetadata>
 

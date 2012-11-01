@@ -15,7 +15,10 @@ SRC_URI="mirror://sourceforge/bochs/${P}.tar.gz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
-IUSE="3dnow avx debugger doc ncurses readline svga sdl usb wxwidgets vnc X"
+IUSE="3dnow avx debugger doc gdb ncurses readline svga sdl +smp wxwidgets vnc X +x86-64"
+REQUIRED_USE="avx? ( x86-64 )
+	gdb? ( !debugger !smp )
+	debugger? ( !gdb )"
 
 RDEPEND="X? ( x11-libs/libICE
 		x11-libs/libSM
@@ -60,18 +63,19 @@ src_configure() {
 		--enable-pnic \
 		--enable-raw-serial \
 		--enable-sb16=linux \
-		--enable-smp \
 		--enable-usb \
 		--enable-usb-ohci \
 		--enable-usb-xhci \
 		--prefix=/usr \
 		--with-nogui \
 		$(use_enable 3dnow) \
-		$(use_enable amd64 x86-64) \
 		$(use_enable avx) \
 		$(use_enable debugger) \
 		$(use_enable doc docbook) \
+		$(use_enable gdb gdb-stub) \
 		$(use_enable readline) \
+		$(use_enable smp) \
+		$(use_enable x86-64) \
 		$(use_with ncurses term) \
 		$(use_with sdl) \
 		$(use_with svga) \
