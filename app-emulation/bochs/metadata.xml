@@ -3,10 +3,7 @@
 <pkgmetadata>
 <use>
 <flag name="avx">Enable support for Advanced Vector Extensions (AVX)</flag>
-<flag name="cdrom">Enable access of existing CDROM device</flag>
 <flag name="debugger">Enable debugger (slows down emulation)</flag>
-<flag name="e1000">Enable Intel(R) 82540EM Gigabit Ethernet adapter support</flag>
-<flag name="gameport">Enable emulation of a gameport</flag>
 </use>
 </pkgmetadata>
 

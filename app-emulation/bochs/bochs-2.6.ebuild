@@ -8,14 +8,14 @@ WX_GTK_VER=2.8
 
 inherit eutils wxwidgets
 
-DESCRIPTION="a LGPL-ed pc emulator"
+DESCRIPTION="LGPL-ed pc emulator"
 HOMEPAGE="http://bochs.sourceforge.net/"
 SRC_URI="mirror://sourceforge/bochs/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
-IUSE="3dnow avx cdrom debugger doc e1000 gameport ncurses readline svga sdl +smp usb wxwidgets vnc X"
+IUSE="3dnow avx debugger doc ncurses readline svga sdl usb wxwidgets vnc X"
 
 RDEPEND="X? ( x11-libs/libICE
 		x11-libs/libSM
@@ -34,9 +34,8 @@ DEPEND="${RDEPEND}
 	>=app-text/opensp-1.5"
 
 src_prepare() {
-	# fix hardcoded doc path ignoring PV
-	sed -i "s/^docdir.*/docdir = ${EPREFIX}\/usr\/share\/doc\/${PF}/" \
-		Makefile.in || die "sed failed"
+	sed -i "s:^docdir.*:docdir = ${EPREFIX}/usr/share/doc/${PF}:" \
+		Makefile.in || die
 }
 
 src_configure() {
@@ -46,33 +45,33 @@ src_configure() {
 	econf \
 		--enable-all-optimizations \
 		--enable-idle-hack \
-		--enable-disasm \
-		--enable-raw-serial \
+		--enable-cdrom \
 		--enable-clgd54xx \
-		--enable-monitor-mwait \
+		--enable-cpu-level=6 \
+		--enable-disasm \
+		--enable-e1000 \
+		--enable-gameport \
 		--enable-iodebug \
-		--prefix=/usr \
+		--enable-monitor-mwait \
 		--enable-ne2000 \
-		--enable-sb16=linux \
 		--enable-plugins \
 		--enable-pci \
 		--enable-pcidev \
 		--enable-pnic \
-		--enable-cpu-level=6 \
+		--enable-raw-serial \
+		--enable-sb16=linux \
+		--enable-smp \
+		--enable-usb \
+		--enable-usb-ohci \
+		--enable-usb-xhci \
+		--prefix=/usr \
 		--with-nogui \
 		$(use_enable 3dnow) \
 		$(use_enable amd64 x86-64) \
 		$(use_enable avx) \
-		$(use_enable cdrom) \
 		$(use_enable debugger) \
 		$(use_enable doc docbook) \
-		$(use_enable e1000) \
-		$(use_enable gameport) \
 		$(use_enable readline) \
-		$(use_enable smp) \
-		$(use_enable usb) \
-		$(use_enable usb usb-ohci) \
-		$(use_enable usb usb-xhci) \
 		$(use_with ncurses term) \
 		$(use_with sdl) \
 		$(use_with svga) \
@@ -82,29 +81,3 @@ src_configure() {
 		$(use_with X x11) \
 		${myconf}
 }
-
-#src_install() {
-#	make DESTDIR="${D}" install unpack_dlx || die "make install failed"
-
-	# workaround
-#	make prefix="${D}/usr" install_dlx
-
-#	dodoc \
-#		CHANGES \
-#		PARAM_TREE.txt \
-#		README \
-#		README-plugins \
-#		TESTFORM.txt \
-#		TODO || \
-#		die "doco failed"
-
-#	if [ use vnc ]
-#	then
-#		dodoc README.rfb || die "dodoc failed"
-#	fi
-
-#	if [ use wxwidgets ]
-#	then
-#		dodoc README-wxWindows || die "dodoc failed"
-#	fi
-#}
