@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/games-simulation/openttd/openttd-1.1.2_rc2.ebuild,v 1.1 2011/07/07 17:42:33 mr_bones_ Exp $
 
-EAPI=2
+EAPI=5
 inherit eutils games subversion
 
 DESCRIPTION="OpenTTD is a clone of Transport Tycoon Deluxe"
@@ -42,10 +42,11 @@ RDEPEND="
 	openmedia? ( games-misc/opengfx )
 	"
 
-PATCHES=( "${FILESDIR}"/${P}-cflags.patch )
-
 src_prepare() {
 	subversion_src_prepare
+
+	epatch "${FILESDIR}/${P}-cflags.patch"
+
 	# fix to help the automatic revision detection
 	echo "r${ESVN_WC_REVISION}	${ESVN_WC_REVISION}	0	r${ESVN_WC_REVISION}" \
 		> "${S}/.ottdrev"
@@ -100,17 +101,8 @@ src_configure() {
 		|| die
 }
 
-src_compile() {
-	emake VERBOSE=1 || die
-}
-
-src_test() {
-	vecho ">>> Test phase [test]: ${CATEGORY}/${PF}"
-	emake -j1 test || die
-}
-
 src_install() {
-	emake DESTDIR="${D}" install || die
+	emake install
 	if use dedicated ; then
 		newinitd "${FILESDIR}"/${PN}.initd ${PN}
 		rm -rf "${D}"/usr/share/{applications,icons,pixmaps}
