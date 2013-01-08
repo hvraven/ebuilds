@@ -1,3 +1,9 @@
+*sshfp-1.2.2-r1 (08 Jan 2013)
+
+  08 Jan 2013; Hendrik v. Raven <hendrik@consetetur.de> +sshfp-1.2.2-r1.ebuild,
+  -sshfp-1.2.2.ebuild:
+  removed bundled lib
+
 *sshfp-1.2.2 (08 Jan 2013)
 
   08 Jan 2013; Hendrik v. Raven <hendrik@consetetur.de> +metadata.xml,

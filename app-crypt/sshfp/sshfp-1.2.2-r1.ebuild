@@ -23,7 +23,6 @@ RDEPEND="dev-python/dnspython"
 src_install() {
 	python_foreach_impl python_doscript sshfp
 	python_foreach_impl python_doscript dane
-	python_foreach_impl python_domodule daneldnsx.py
 
 	dodoc TODO README CHANGES BUGS
 	doman dane.1 sshfp.1
