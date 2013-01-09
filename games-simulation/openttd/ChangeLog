@@ -1,0 +1,3 @@
+  09 Jan 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, -Manifest, openttd-9999.ebuild:
+  corrected nightly (make install now automatically compresses man)
