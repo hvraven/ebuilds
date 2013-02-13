@@ -10,7 +10,7 @@ inherit bash-completion-r1 python-r1
 
 DESCRIPTION="A ncurses interface for the Transmission BitTorrent client"
 HOMEPAGE="https://github.com/fagga/transmission-remote-cli/tree/v1.4.7"
-SRC_URI="https://github.com/fagga/${PN}/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/fagga/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
