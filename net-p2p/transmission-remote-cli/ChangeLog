@@ -1,0 +1,5 @@
+*transmission-remote-cli-1.4.7 (13 Feb 2013)
+
+  13 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +transmission-remote-cli-1.4.7.ebuild:
+  new ebuild for the transmission-remote-cli
