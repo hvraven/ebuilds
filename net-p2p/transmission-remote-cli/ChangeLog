@@ -1,3 +1,7 @@
+  14 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  transmission-remote-cli-1.4.7.ebuild:
+  transmission-remote-cli: support for more python, some fixes
+
   13 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   transmission-remote-cli-1.4.7.ebuild:
   transmission-remote-cli: changed distfile name
