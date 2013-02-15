@@ -3,16 +3,19 @@
 # $Header: $
 
 EAPI=5
-inherit eutils games gnome2-utils subversion
+inherit eutils games gnome2-utils
 
+MY_PV=${PV/_/-}
+MY_P="${PN}-${MY_PV}"
 DESCRIPTION="OpenTTD is a clone of Transport Tycoon Deluxe"
 HOMEPAGE="https://www.openttd.org/"
-ESVN_REPO_URI="svn://svn.openttd.org/trunk"
+SRC_URI="http://binaries.openttd.org/releases/${MY_PV}/${MY_P}-source.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
-IUSE="aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity +truetype zlib"
+KEYWORDS="~amd64 ~arm ~ppc ~x86"
+IUSE="aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity
+	+truetype +zlib"
 REQUIRED_USE="
 	aplaymidi? ( !timidity )
 	timidity? ( !aplaymidi )
@@ -43,18 +46,16 @@ RDEPEND="
 			games-misc/opensfx
 		)
 		aplaymidi? ( media-sound/alsa-utils )
-		!aplaymidi? ( timidity? ( media-sound/timidity++ ) )
+		timidity?  ( media-sound/timidity++ )
 	)
-	openmedia? ( games-misc/opengfx )"
+	openmedia? ( >=games-misc/opengfx-0.4.6 )"
 
-src_prepare() {
-	subversion_src_prepare
+S="${WORKDIR}/${MY_P}"
 
-	# fix to help the automatic revision detection
-	echo "r${ESVN_WC_REVISION}	${ESVN_WC_REVISION}	0	r${ESVN_WC_REVISION}" \
-		> "${S}/.ottdrev"
-}
-
+# TODO:
+#   remove bundled squirrel, bump squirrel:2
+#   new init script
+#   split dedicated server (?)
 src_configure() {
 	local myopts
 
@@ -94,18 +95,17 @@ src_configure() {
 		|| die
 }
 
+src_compile() {
+	emake VERBOSE=1
+}
+
 src_install() {
 	emake install
 	if use dedicated ; then
 		newinitd "${FILESDIR}"/${PN}.initd ${PN}
 		rm -rf "${D}"/usr/share/{applications,icons,pixmaps}
 	fi
-	rm -f "${D}"/usr/share/doc/${PF}/*
-	dodoc readme.txt
-	dodoc known-bugs.txt
-	dodoc docs/admin_network.txt
-	dodoc docs/multiplayer.txt
-
+	rm -f "${D}"/usr/share/doc/${PF}/COPYING
 	prepgamesdirs
 }
 

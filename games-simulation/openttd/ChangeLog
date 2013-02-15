@@ -1,3 +1,10 @@
+*openttd-1.3.0_beta2 (15 Feb 2013)
+
+  15 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +openttd-1.3.0_beta2.ebuild, -files/openttd-9999-cflags.patch,
+  openttd-9999.ebuild:
+  ebuild for the current openttd beta
+
   09 Jan 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   +metadata.xml, -Manifest, openttd-9999.ebuild:
   corrected nightly (make install now automatically compresses man)
