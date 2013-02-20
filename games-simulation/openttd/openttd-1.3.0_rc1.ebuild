@@ -5,7 +5,7 @@
 EAPI=5
 inherit eutils games gnome2-utils
 
-MY_PV=${PV/_/-}
+MY_PV=${PV/_rc/-RC}
 MY_P="${PN}-${MY_PV}"
 DESCRIPTION="OpenTTD is a clone of Transport Tycoon Deluxe"
 HOMEPAGE="https://www.openttd.org/"
