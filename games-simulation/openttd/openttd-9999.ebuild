@@ -12,7 +12,8 @@ ESVN_REPO_URI="svn://svn.openttd.org/trunk"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity +truetype zlib"
+IUSE="aplaymidi debug dedicated doc iconv icu lzo +openmedia +png +timidity
+	+truetype +zlib"
 REQUIRED_USE="
 	aplaymidi? ( !timidity )
 	timidity? ( !aplaymidi )
@@ -22,7 +23,7 @@ REQUIRED_USE="
 	) "
 RESTRICT="test"
 
-DEPEND="
+COMMON_DEPS="
 	!dedicated? (
 		media-libs/libsdl[audio,X,video]
 		icu? ( dev-libs/icu )
@@ -35,8 +36,11 @@ DEPEND="
 	iconv? ( virtual/libiconv )
 	png? ( media-libs/libpng )
 	zlib? ( sys-libs/zlib )"
+DEPEND="
+	${COMMON_DEPS}
+	doc? ( app-doc/doxygen )"
 RDEPEND="
-	${DEPEND}
+	${COMMON_DEPS}
 	!dedicated? (
 		openmedia? (
 			games-misc/openmsx
@@ -44,7 +48,7 @@ RDEPEND="
 			games-misc/opengfx
 		)
 		aplaymidi? ( media-sound/alsa-utils )
-		!aplaymidi? ( timidity? ( media-sound/timidity++ ) )
+		timidity?  ( media-sound/timidity++ )
 	)"
 
 src_prepare() {
@@ -94,13 +98,23 @@ src_configure() {
 		|| die
 }
 
+src_compile() {
+	emake VERBOSE=1
+
+	if use doc ; then
+		doxygen || die
+	fi
+}
+
 src_install() {
 	emake install
 	if use dedicated ; then
 		newinitd "${FILESDIR}"/${PN}.initd ${PN}
 		rm -rf "${D}"/usr/share/{applications,icons,pixmaps}
 	fi
-	rm -f "${D}"/usr/share/doc/${PF}/*
+
+	rm -rf "${D}/usr/share/doc/${PF}"
+	use doc && dodoc -r docs/source/html
 	dodoc readme.txt
 	dodoc known-bugs.txt
 	dodoc docs/admin_network.txt

@@ -14,7 +14,8 @@ SRC_URI="http://binaries.openttd.org/releases/${MY_PV}/${MY_P}-source.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~x86"
-IUSE="aplaymidi debug dedicated doc iconv icu lzo +openmedia +png +timidity +truetype +zlib"
+IUSE="aplaymidi debug dedicated doc iconv icu lzo +openmedia +png +timidity
+	+truetype +zlib"
 REQUIRED_USE="
 	aplaymidi? ( !timidity )
 	timidity? ( !aplaymidi )
@@ -100,7 +101,9 @@ src_configure() {
 src_compile() {
 	emake VERBOSE=1
 
-	use doc && doxygen
+	if use doc ; then
+		doxygen || die
+	fi
 }
 
 src_install() {
@@ -109,8 +112,10 @@ src_install() {
 		newinitd "${FILESDIR}"/${PN}.initd ${PN}
 		rm -rf "${D}"/usr/share/{applications,icons,pixmaps}
 	fi
-	dodoc -r docs/source/html
-	rm -f "${D}"/usr/share/doc/${PF}/COPYING
+
+	use doc && dodoc -r docs/source/html
+	rm -f "${D}/usr/share/doc/${PF}/COPYING"
+
 	prepgamesdirs
 }
 

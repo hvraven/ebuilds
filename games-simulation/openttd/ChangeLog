@@ -1,5 +1,9 @@
   21 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   openttd-1.3.0_rc1.ebuild, openttd-9999.ebuild:
+  openttd: doc use flag for nightly
+
+  21 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  openttd-1.3.0_rc1.ebuild, openttd-9999.ebuild:
   openttd: added doc use flag
 
 *openttd-1.3.0_rc1 (20 Feb 2013)
