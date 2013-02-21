@@ -14,8 +14,7 @@ SRC_URI="http://binaries.openttd.org/releases/${MY_PV}/${MY_P}-source.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~x86"
-IUSE="aplaymidi debug dedicated iconv icu lzo +openmedia +png +timidity
-	+truetype +zlib"
+IUSE="aplaymidi debug dedicated doc iconv icu lzo +openmedia +png +timidity +truetype +zlib"
 REQUIRED_USE="
 	aplaymidi? ( !timidity )
 	timidity? ( !aplaymidi )
@@ -25,7 +24,7 @@ REQUIRED_USE="
 	) "
 RESTRICT="test"
 
-DEPEND="
+COMMON_DEPS="
 	!dedicated? (
 		media-libs/libsdl[audio,X,video]
 		icu? ( dev-libs/icu )
@@ -38,17 +37,20 @@ DEPEND="
 	iconv? ( virtual/libiconv )
 	png? ( media-libs/libpng )
 	zlib? ( sys-libs/zlib )"
+DEPEND="
+	${COMMON_DEPS}
+	doc? ( app-doc/doxygen )"
 RDEPEND="
-	${DEPEND}
+	${COMMON_DEPS}
 	!dedicated? (
 		openmedia? (
 			games-misc/openmsx
 			games-misc/opensfx
+			>=games-misc/opengfx-0.4.6
 		)
 		aplaymidi? ( media-sound/alsa-utils )
 		timidity?  ( media-sound/timidity++ )
-	)
-	openmedia? ( >=games-misc/opengfx-0.4.6 )"
+	)"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -97,6 +99,8 @@ src_configure() {
 
 src_compile() {
 	emake VERBOSE=1
+
+	use doc && doxygen
 }
 
 src_install() {
@@ -105,6 +109,7 @@ src_install() {
 		newinitd "${FILESDIR}"/${PN}.initd ${PN}
 		rm -rf "${D}"/usr/share/{applications,icons,pixmaps}
 	fi
+	dodoc -r docs/source/html
 	rm -f "${D}"/usr/share/doc/${PF}/COPYING
 	prepgamesdirs
 }
