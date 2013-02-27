@@ -47,11 +47,12 @@ RDEPEND="
 		openmedia? (
 			games-misc/openmsx
 			games-misc/opensfx
-			>=games-misc/opengfx-0.4.6
 		)
 		aplaymidi? ( media-sound/alsa-utils )
 		timidity?  ( media-sound/timidity++ )
-	)"
+	)
+	openmedia? ( >=games-misc/opengfx-0.4.6 )
+	"
 
 S="${WORKDIR}/${MY_P}"
 

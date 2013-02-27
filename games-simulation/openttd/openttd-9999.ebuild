@@ -45,11 +45,12 @@ RDEPEND="
 		openmedia? (
 			games-misc/openmsx
 			games-misc/opensfx
-			games-misc/opengfx
 		)
 		aplaymidi? ( media-sound/alsa-utils )
 		timidity?  ( media-sound/timidity++ )
-	)"
+	)
+	openmedia? ( games-misc/opengfx )
+	"
 
 src_prepare() {
 	subversion_src_prepare
