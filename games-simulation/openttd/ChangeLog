@@ -1,3 +1,9 @@
+*openttd-1.3.0_rc2 (07 Mar 2013)
+
+  07 Mar 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +openttd-1.3.0_rc2.ebuild, -openttd-1.3.0_rc1.ebuild:
+  openttd: version bump
+
   27 Feb 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   openttd-1.3.0_rc1.ebuild, openttd-9999.ebuild:
   openttd: corrected openmedia dependencies
