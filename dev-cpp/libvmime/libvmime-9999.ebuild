@@ -13,7 +13,7 @@ EGIT_REPO_URI="git://github.com/kisli/vmime"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="debug doc examples +gnutls +imap +maildir +pop sasl sendmail +smtp ssl static-libs"
+IUSE="doc +gnutls +imap +maildir +pop sasl sendmail +smtp ssl static-libs"
 
 RDEPEND="virtual/libiconv
 	ssl? (
