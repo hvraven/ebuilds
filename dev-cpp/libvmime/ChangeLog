@@ -1,0 +1,5 @@
+*libvmime-9999 (27 Mar 2013)
+
+  27 Mar 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +libvmime-9999.ebuild, +metadata.xml:
+  nightly build for libvmime
