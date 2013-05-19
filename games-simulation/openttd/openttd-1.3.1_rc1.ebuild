@@ -22,7 +22,7 @@ REQUIRED_USE="
 	png? ( zlib )
 	!dedicated? (
 		truetype? ( zlib )
-	) "
+	)"
 RESTRICT="test"
 
 COMMON_DEPS="
