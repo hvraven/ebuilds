@@ -56,10 +56,6 @@ RDEPEND="
 
 S="${WORKDIR}/${MY_P}"
 
-# TODO:
-#   remove bundled squirrel, bump squirrel:2
-#   new init script
-#   split dedicated server (?)
 src_configure() {
 	local myopts
 
