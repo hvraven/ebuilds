@@ -1,3 +1,9 @@
+*openttd-1.3.2_rc2 (15 Jul 2013)
+
+  15 Jul 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +openttd-1.3.2_rc2.ebuild, -openttd-1.3.2_rc1.ebuild:
+  games-simulation/openttd: version bump
+
 *openttd-1.3.2_rc1 (01 Jul 2013)
 
   01 Jul 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
