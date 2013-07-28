@@ -1,0 +1,5 @@
+*transmission-remote-cli-1.6.1 (28 Jul 2013)
+
+  28 Jul 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +transmission-remote-cli-1.6.1.ebuild:
+  net-p2p/transmission-remote-cli: working copy
