@@ -1,0 +1,5 @@
+*nml-9999 (30 Aug 2013)
+
+  30 Aug 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +nml-9999.ebuild:
+  games-util/nml-9999 new ebuild
