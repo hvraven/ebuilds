@@ -1,0 +1,5 @@
+*dnspython3-1.11.1 (04 Sep 2013)
+
+  04 Sep 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +dnspython3-1.11.1.ebuild, +metadata.xml:
+  dev-python/dnspython3: new ebuild
