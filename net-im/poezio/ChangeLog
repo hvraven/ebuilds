@@ -1,0 +1,5 @@
+*poezio-9999 (04 Sep 2013)
+
+  04 Sep 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +poezio-9999.ebuild:
+  net-im/poezio: new ebuild
