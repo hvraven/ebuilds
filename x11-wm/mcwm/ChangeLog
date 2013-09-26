@@ -1,0 +1,5 @@
+*mcwm-20130209 (26 Sep 2013)
+
+  26 Sep 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +mcwm-20130209.ebuild, +metadata.xml:
+  x11-wm/mcwm: new ebuild
