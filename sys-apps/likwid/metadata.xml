@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<use>
+		<flag name="access-daemon">
+			Build access-daemon for access to /dev/cpu/*/msr.
+		</flag>
+		<flag name="uncore">
+			Yield access to uncore events
+		</flag>
+	</use>
+</pkgmetadata>

@@ -1,0 +1,5 @@
+*likwid-3.0.0 (05 Dec 2013)
+
+  05 Dec 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +likwid-3.0.0.ebuild, +metadata.xml:
+  sys-apps/likwid: new ebuild
