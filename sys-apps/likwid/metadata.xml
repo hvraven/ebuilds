@@ -10,7 +10,7 @@
 			Build access-daemon for access to /dev/cpu/*/msr.
 		</flag>
 		<flag name="uncore">
-			Yield access to uncore events
+			Uncore support for Intel Sandy Bridge processors.
 		</flag>
 	</use>
 </pkgmetadata>
