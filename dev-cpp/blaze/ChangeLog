@@ -1,0 +1,5 @@
+*blaze-1.4 (09 Dec 2013)
+
+  09 Dec 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +blaze-1.4.ebuild, +metadata.xml:
+  dev-cpp/blaze: new ebuild
