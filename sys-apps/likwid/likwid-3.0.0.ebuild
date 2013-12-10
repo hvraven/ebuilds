@@ -52,6 +52,11 @@ src_prepare() {
 		-e 's/^FCFLAGS *=\(.*\)/FCFLAGS += \1/' || die
 	sed -i src/access-daemon/Makefile \
 		-e '/^CC/d' -e 's/^CFLAGS *=\(.*\)/CFLAGS := \1 $(CFLAGS)/' || die
+	sed -i include_GCC.mk \
+		-e 's/LFLAGS *=\(.*\)/LFLAGS = \1 $(LDFLAGS)/' || die
+
+	# add missing sonames
+	echo 'SHARED_LFLAGS += -Wl,-soname,$@' >> include_GCC.mk
 
 	# overwrite mempolicy and schedaffinity checks
 	if kernel_is -ge 3 7 ; then
