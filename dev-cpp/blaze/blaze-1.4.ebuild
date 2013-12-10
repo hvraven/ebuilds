@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit toolchain-funcs
+inherit flag-o-matic toolchain-funcs
 
 DESCRIPTION="High-performance C++ math library for dense and sparse arithmetic"
 HOMEPAGE="https://code.google.com/p/blaze-lib/"
@@ -21,34 +21,45 @@ RDEPEND="blas? ( virtual/cblas )
 DEPEND="${RDEPEND}
 	doc? ( app-doc/doxygen )"
 
-add_config() {
+my_addconfig() {
 	echo $@ >> GentooConfig
 }
 
 my_usex() {
-	usex $1 $2 $2 $3 $4 >> GentooConfig
+	my_addconfig $(usex $1 $2 $2 $3 $4)
 }
 
 src_configure() {
-	add_config 'VERSION="release"'
-	add_config "CXX=$(tc-getCXX)"
-	EXTRA_LDFLAGS="-Wl,-soname,libblaze.so"
+	my_addconfig 'VERSION="release"'
+	my_addconfig "CXX=$(tc-getCXX)"
+	append-ldflags -Wl,-soname,libblaze.so
+
 	my_usex static-libs LIBRARY= both shared
+
 	if use blas ; then
-		add_config 'BLAS=yes'
-		add_config 'BLAS_INCLUDE_FILE=cblas.h'
+		my_addconfig 'BLAS=yes'
+		my_addconfig 'BLAS_INCLUDE_FILE=cblas.h'
 	else
-		add_config 'BLAS=no'
+		my_addconfig 'BLAS=no'
 	fi
+
 	if use mpi ; then
-		add_config 'MPI=yes'
-		EXTRA_LDFLAGS="${EXTRA_LDFLAGS} $(mpic++ --showme:link)"
+		my_addconfig 'MPI=yes'
+		append-cxxflags $(mpicxx --showme:compile)
+		append-cppflags $(mpicxx --showme:incdirs)
+		append-libs $(mpicxx --showme:libs)
 	else
-		add_config 'MPI=no'
+		my_addconfig 'MPI=no'
 	fi
-	add_config "LIBRARY_DIRECTIVES=\"${EXTRA_LDFLAGS}\""
+
+	my_addconfig "LIBRARY_DIRECTIVES=\"$LDFLAGS $LIBS\""
 
 	./configure GentooConfig || die
+
+	# verbose building
+	sed -i Makefile */*/Makefile \
+		-e 's/^\t@/\t/' -e 's/^\techo/\t@echo/' || die
+
 }
 
 src_compile() {

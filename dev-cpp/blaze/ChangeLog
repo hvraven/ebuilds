@@ -1,5 +1,9 @@
   10 Dec 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   blaze-1.4.ebuild:
+  dev-cpp/blaze: changed LDFLAGS handling
+
+  10 Dec 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  blaze-1.4.ebuild:
   dev-cpp/blaze: correct handling of USE=mpi and blas
 
 *blaze-1.4 (09 Dec 2013)
