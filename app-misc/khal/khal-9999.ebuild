@@ -19,7 +19,8 @@ SLOT="0"
 IUSE=""
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-DEPEND=">=dev-python/lxml-2[$PYTHON_USEDEP]
+DEPEND="${PYTHON_DEPS}
+	>=dev-python/lxml-2[$PYTHON_USEDEP]
 	>=dev-python/requests-0.10[$PYTHON_USEDEP]
 	>=dev-python/urwid-0.9[$PYTHON_USEDEP]
 	dev-python/pyxdg[$PYTHON_USEDEP]
