@@ -1,11 +1,12 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=5
 inherit eutils games gnome2-utils
 
-MY_PV=${PV/_rc/-RC}
+MY_PV_TMP=${PV/_rc/-RC}
+MY_PV=${MY_PV_TMP/_beta/-beta}
 MY_P="${PN}-${MY_PV}"
 DESCRIPTION="OpenTTD is a clone of Transport Tycoon Deluxe"
 HOMEPAGE="https://www.openttd.org/"
