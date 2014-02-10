@@ -1,3 +1,9 @@
+*openttd-1.4.0_beta4 (10 Feb 2014)
+
+  10 Feb 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +openttd-1.4.0_beta4.ebuild, -openttd-1.4.0_beta3.ebuild:
+  games-simulation/openttd: new beta version
+
 *openttd-1.4.0_beta3 (22 Jan 2014)
 
   22 Jan 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
