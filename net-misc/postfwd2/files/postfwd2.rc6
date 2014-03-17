@@ -1,0 +1,31 @@
+#!/sbin/runscript
+# Copyright 1999-2014 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+extra_started_commands="reload"
+
+depend() {
+	need net
+}
+
+start() {
+	ebegin "Starting postfwd2"
+	postfwd2 --pidfile ${PIDFILE} \
+		--user ${USER} --group ${GROUP} \
+		${EXTRA_OPTS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping postfwd2"
+	postfwd2 --pidfile ${PIDFILE} --stop
+	eend $?
+
+}
+
+reload() {
+	ebegin "Reloading postfwd2 config"
+	postfwd2 --pidfile ${PIDFILE} --reload
+	eend $?
+}

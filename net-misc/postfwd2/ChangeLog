@@ -1,0 +1,6 @@
+*postfwd2-1.35 (17 Mar 2014)
+
+  17 Mar 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +files/postfwd2.conf, +files/postfwd2.rc6, +metadata.xml,
+  +postfwd2-1.35.ebuild:
+  net-misc/postfwd2: new ebuild
