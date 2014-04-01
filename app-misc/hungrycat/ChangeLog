@@ -1,0 +1,5 @@
+*hungrycat-0.3.2 (01 Apr 2014)
+
+  01 Apr 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +hungrycat-0.3.2.ebuild, +metadata.xml, -hungrycat-0.2.ebuild:
+  app-misc/hungrycat: version bump

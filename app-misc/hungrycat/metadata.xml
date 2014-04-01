@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<longdescription lang="en">
+	    hungrycat is a tool that prints contents of a file on the standard output, while simultaneously freeing disk space occupied by the file. It can be useful if you need to process a large file, but you don't have enough space to store the output file and you wouldn't need the input file afterwards.
+	</longdescription>
+</pkgmetadata>
