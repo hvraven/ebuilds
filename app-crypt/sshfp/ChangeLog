@@ -1,3 +1,7 @@
+  01 Apr 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  sshfp-1.2.2-r1.ebuild:
+  app-crypt/sshfp: corrected package download name
+
 *sshfp-1.2.2-r1 (08 Jan 2013)
 
   08 Jan 2013; Hendrik v. Raven <hendrik@consetetur.de> +sshfp-1.2.2-r1.ebuild,

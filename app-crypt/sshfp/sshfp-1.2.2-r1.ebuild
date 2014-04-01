@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -9,7 +9,7 @@ inherit python-r1
 
 DESCRIPTION="sshfp generates DNS SSHFP and DANE records for use with DNSSEC"
 HOMEPAGE="http://www.xelerance.com/services/software/sshfp/"
-SRC_URI="https://github.com/xelerance/${PN}/archive/${PV}.zip"
+SRC_URI="https://github.com/xelerance/${PN}/archive/${PV}.zip -> ${P}.zip"
 
 LICENSE="GPL-2+"
 SLOT="0"
