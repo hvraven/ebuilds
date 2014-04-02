@@ -57,6 +57,11 @@ RDEPEND="
 
 S="${WORKDIR}/${MY_P}"
 
+src_prepare() {
+	# fix buggy desktop entry
+	sed -e 's/^\(Keywords=.*\)$/\1;/' -i media/openttd.desktop.in || die
+}
+
 src_configure() {
 	local myopts
 

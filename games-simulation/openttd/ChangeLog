@@ -1,3 +1,9 @@
+*openttd-1.4.0 (02 Apr 2014)
+
+  02 Apr 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +openttd-1.4.0.ebuild, -openttd-1.4.0_rc1.ebuild:
+  games-simulation/openttd: version bump
+
 *openttd-1.4.0_rc1 (01 Apr 2014)
 
   01 Apr 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
