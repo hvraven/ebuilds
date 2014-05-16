@@ -1,0 +1,5 @@
+*ical2rem-9999 (16 May 2014)
+
+  16 May 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +ical2rem-9999.ebuild, +metadata.xml:
+  new ebuild: app-misc/ical2rem
