@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -25,7 +25,7 @@ RESTRICT="test"
 
 COMMON_DEPS="
 	!dedicated? (
-		media-libs/libsdl[audio,X,video]
+		media-libs/libsdl[sound,X,video]
 		icu? ( dev-libs/icu )
 		truetype? (
 			media-libs/fontconfig
