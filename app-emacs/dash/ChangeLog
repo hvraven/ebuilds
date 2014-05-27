@@ -1,0 +1,5 @@
+*dash-9999 (27 May 2014)
+
+  27 May 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +dash-9999.ebuild, +metadata.xml:
+  app-emacs/smartparens: new ebuild (+ deps)
