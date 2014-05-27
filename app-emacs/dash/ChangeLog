@@ -1,3 +1,9 @@
+*dash-2.6.0 (27 May 2014)
+
+  27 May 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +dash-2.6.0.ebuild:
+  app-emacs/dash: added latest release
+
 *dash-9999 (27 May 2014)
 
   27 May 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
