@@ -14,18 +14,23 @@ SRC_URI="http://people.redhat.com/pwouters/${PN}/${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="+sshfp +gnupg"
 
 DEPEND=""
 RDEPEND="net-dns/unbound[python,$PYTHON_USEDEP]
-	dev-python/python-gnupg[$PYTHON_USEDEP]
 	dev-python/ipaddr[$PYTHON_USEDEP]
 	dev-python/m2crypto[$PYTHON_USEDEP]
-	net-misc/openssh"
+	gnupg? ( dev-python/python-gnupg[$PYTHON_USEDEP] )
+	sshfp? ( net-misc/openssh )"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_install() {
-	for bin in openpgpkey sshfp tlsa ; do
+	local progs
+	progs=tlsa
+	use sshfp && progs="$progs sshfp"
+	use gnupg && progs="$progs openpgpkey"
+	for bin in $progs ; do
 		doman ${bin}.1
 		python_foreach_impl python_doscript ${bin}
 	done

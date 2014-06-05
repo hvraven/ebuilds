@@ -5,4 +5,8 @@
 		<email>hendrik@consetetur.de</email>
 		<name>Hendrik v. Raven (lorem_ipsum)</name>
 	</maintainer>
+	<use>
+		<flag name='gnupg'>Enable support for OPENPGPKEY records</flag>
+		<flag name='sshfp'>Enable support for generating sshfp entries</flag>
+	</use>
 </pkgmetadata>
