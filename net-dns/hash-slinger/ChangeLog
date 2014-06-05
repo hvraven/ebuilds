@@ -1,0 +1,5 @@
+*hash-slinger-2.5 (05 Jun 2014)
+
+  05 Jun 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +hash-slinger-2.5.ebuild, +metadata.xml:
+  net-dns/hash-slinger: new ebuild
