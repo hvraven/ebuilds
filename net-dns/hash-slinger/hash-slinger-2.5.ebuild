@@ -16,11 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND=""
-RDEPEND="net-dns/unbound[python]
-	dev-python/python-gnupg
-	dev-python/ipaddr
-	dev-python/m2crypto
+RDEPEND="net-dns/unbound[python,$PYTHON_USEDEP]
+	dev-python/python-gnupg[$PYTHON_USEDEP]
+	dev-python/ipaddr[$PYTHON_USEDEP]
+	dev-python/m2crypto[$PYTHON_USEDEP]
 	net-misc/openssh"
+
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_install() {
 	for bin in openpgpkey sshfp tlsa ; do
