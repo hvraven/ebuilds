@@ -27,6 +27,10 @@ src_prepare() {
 		config.mk || die
 
 	sed -i \
+		-e "s/VERSION/${PV}/g" \
+		${PN}.1 || die
+
+	sed -i \
 		-e '/@echo CC/d' \
 		-e 's|@${CC}|$(CC)|g' \
 		Makefile || die
