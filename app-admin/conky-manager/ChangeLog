@@ -1,0 +1,5 @@
+*conky-manager-2.0.3 (11 Jul 2014)
+
+  11 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +conky-manager-2.0.3.ebuild, +metadata.xml:
+  app-admin/conky-manager: new ebuild
