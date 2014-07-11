@@ -1,3 +1,8 @@
+  11 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de> -Manifest,
+  conky-manager-2.0.3.ebuild:
+  app-admin/conky-manager: get sources from bzr with fixed revision  tarballs
+  apear to change size causing manifest errors
+
   11 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   conky-manager-2.0.3.ebuild:
   app-admin/conky-manager: updated conky dependencies

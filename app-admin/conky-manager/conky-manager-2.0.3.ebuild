@@ -4,13 +4,13 @@
 
 EAPI=5
 
-inherit vala
+inherit bzr vala
 
 DESCRIPTION="graphical front-end for conky config files"
 HOMEPAGE="http://www.teejeetech.in/p/conky-manager.html"
-# upstream doesn't provide real tarballs
-REV=102
-SRC_URI="https://bazaar.launchpad.net/~teejee2008/conky-manager/trunk/tarball/${REV} -> ${P}.tar.gz"
+# upstream doesn't provide tarballs
+EBZR_REVISION=102
+EBZR_REPO_URI="lp:conky-manager"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -27,8 +27,6 @@ DEPEND="${COMMON_DEPS}
 RDEPEND="${COMMON_DEPS}
 	app-admin/conky[imlib,lua,lua-cairo,lua-imlib]
 	app-arch/p7zip"
-
-S="$WORKDIR/~teejee2008/conky-manager/trunk"
 
 src_prepare() {
 	vala_src_prepare
