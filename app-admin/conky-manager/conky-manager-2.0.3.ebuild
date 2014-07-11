@@ -25,8 +25,7 @@ COMMON_DEPS="
 DEPEND="${COMMON_DEPS}
 	$(vala_depend)"
 RDEPEND="${COMMON_DEPS}
-	app-admin/conky
-	media-gfx/imagemagick
+	app-admin/conky[imlib,lua,lua-cairo,lua-imlib]
 	app-arch/p7zip"
 
 S="$WORKDIR/~teejee2008/conky-manager/trunk"
