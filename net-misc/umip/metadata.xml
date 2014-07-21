@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<longdescription lang="en">
+		UMIP is an open source implementation of Mobile IPv6 and NEMO Basic Support for Linux. It supports the following IETF RFC: RFC6275 (Mobile IPv6), RFC3963 (NEMO), RFC3776 and RFC4877 (IPsec and IKEv2). 
+	</longdescription>
+	<use>
+		<flag name='vt'>enable internal virtual terminal</flag>
+	</use>
+</pkgmetadata>

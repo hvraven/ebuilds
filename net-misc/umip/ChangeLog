@@ -1,0 +1,5 @@
+*umip-1.0 (21 Jul 2014)
+
+  21 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +umip-1.0.ebuild:
+  net-misc/umip: new ebuild
