@@ -1,3 +1,9 @@
+*umip-1.0-r2 (24 Jul 2014)
+
+  24 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +umip-1.0-r2.ebuild, -umip-1.0-r1.ebuild:
+  net-misc/umip: fix common dep and check kernel version
+
 *umip-1.0-r1 (24 Jul 2014)
 
   24 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="debug +vt"
 
-COMMON_DEPEND="sys-kernel/linux-headers"
+COMMON_DEPEND="dev-libs/openssl"
 DEPEND="${COMMON_DEPEND}
 	sys-kernel/linux-headers"
 RDEPEND="${COMMON_DEPEND}
@@ -25,6 +25,16 @@ RDEPEND="${COMMON_DEPEND}
 	net-firewall/ipsec-tools[ipv6]"
 
 CONFIG_CHECK="~IPV6_MIP6 ~INET6_XFRM_MODE_ROUTEOPTIMIZATION ~IPV6_TUNNEL ~NET_KEY_MIGRATE ~XFRM_SUB_POLICY"
+
+pkg_setup() {
+	linux-info_pkg_setup
+
+	if kernel_is lt 3 8 1 ; then
+		ewarn "Your kernel version lacks support for required features."
+		ewarn "Upgrade your kernel to a version >= 3.8.1 or apply the patches found at"
+		ewarn "http://umip.org/docs/patches/"
+	fi
+}
 
 src_prepare() {
 	eautoreconf
