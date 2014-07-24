@@ -39,3 +39,11 @@ src_configure() {
 		$(use_enable vt) \
 		--without-builtin-crypto
 }
+
+src_install() {
+	default
+
+	dodoc extras/*.conf
+	newinitd "${FILESDIR}"/mip6d.init mip6d
+	newconfd "${FILESDIR}"/mip6d.conf mip6d
+}

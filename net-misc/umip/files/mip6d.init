@@ -1,0 +1,19 @@
+#!/sbin/runscript
+# Copyright 1999-2014 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+pidfile="/var/run/mip6d.run"
+command="/usr/sbin/mip6d"
+command_args="-c \"${MIP6D_CONF}\" ${MIP6D_ARGS}"
+extra_started_commands="reload"
+
+depend() {
+	need net
+}
+
+reload() {
+	ebegin "Reloading mip6d configuration"
+	start-stop-daemon --signal HUP --pidfile "${pidfile}" \
+		--exec ${command}
+}

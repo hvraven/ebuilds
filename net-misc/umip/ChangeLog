@@ -1,3 +1,9 @@
+*umip-1.0-r1 (24 Jul 2014)
+
+  24 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +files/mip6d.conf, +files/mip6d.init, +umip-1.0-r1.ebuild, -umip-1.0.ebuild:
+  net-misc/umip: init script and examples
+
 *umip-1.0 (21 Jul 2014)
 
   21 Jul 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
