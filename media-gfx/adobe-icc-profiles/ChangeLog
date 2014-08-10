@@ -1,0 +1,5 @@
+*adobe-icc-profiles-20070627 (10 Aug 2014)
+
+  10 Aug 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +adobe-icc-profiles-20070627.ebuild, +metadata.xml:
+  media-gfx/adobe-icc-profiles: new ebuild
