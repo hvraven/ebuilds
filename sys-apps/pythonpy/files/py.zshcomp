@@ -1,0 +1,8 @@
+#compdef py
+
+_py() {
+    local IFS=' '
+    compadd $(pycompleter "${words[@]}" 2>/dev/null)
+}
+
+compdef _py py
