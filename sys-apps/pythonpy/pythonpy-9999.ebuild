@@ -15,7 +15,7 @@ EGIT_REPO_URI="https://github.com/Russell91/pythonpy.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE="zsh-completion"
+IUSE=""
 
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
@@ -34,10 +34,7 @@ install_py() {
 src_install() {
 	python_foreach_impl install_py
 
-	newbashcomp "${FILESDIR}/py.bashcomp py"
-
-	if use zsh-completion ; then
-		insinto /usr/share/zsh/site-functions
-		newins "${FILESDIR}/py.zshcomp" _py
-	fi
+	newbashcomp "${FILESDIR}/py.bashcomp" py
+	insinto /usr/share/zsh/site-functions
+	newins "${FILESDIR}/py.zshcomp" _py
 }
