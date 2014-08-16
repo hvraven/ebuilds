@@ -1,5 +1,9 @@
   16 Aug 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   pythonpy-9999.ebuild:
+  sys-apps/pythonpy: allow python3_2
+
+  16 Aug 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  pythonpy-9999.ebuild:
   sys-apps/pythonpy: another escape bug + unconditional zshcomp
 
   16 Aug 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
