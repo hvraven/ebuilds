@@ -1,3 +1,7 @@
+  16 Aug 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  pythonpy-9999.ebuild:
+  sys-apps/pythonpy: fixed quoting fail
+
 *pythonpy-9999 (16 Aug 2014)
 
   16 Aug 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

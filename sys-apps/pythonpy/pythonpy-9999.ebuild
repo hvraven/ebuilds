@@ -38,6 +38,6 @@ src_install() {
 
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
-		newins "${FILESDIR}/py.zshcomp _py"
+		newins "${FILESDIR}/py.zshcomp" _py
 	fi
 }
