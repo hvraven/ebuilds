@@ -6,7 +6,7 @@ EAPI=5
 
 inherit user
 
-DESCRIPTION="Firewall daemon for the postfix mta."
+DESCRIPTION="Firewall daemon for the postfix mta"
 HOMEPAGE="http://postfwd.org/"
 SRC_URI="http://postfwd.org/${P}"
 
@@ -17,8 +17,8 @@ IUSE=""
 
 DEPEND="dev-perl/net-server
 	dev-perl/Net-DNS
-	perl-core/Time-HiRes
-	perl-core/Storable"
+	virtual/perl-Time-HiRes
+	virtual/perl-Storable"
 RDEPEND="${DEPEND}"
 
 pkg_setup() {
