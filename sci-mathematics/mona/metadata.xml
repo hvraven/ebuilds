@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<longdescription lang="en">
+		 MONA implements decision procedures for the Weak Second-order Theory of One or Two successors (WS1S/WS2S). The theory of one successor, known as WS1S, is a fragment of arithmetic augmented with second-order quantification over finite sets of natural numbers. Its first-order terms denote just natural numbers. The theory has no addition, since that would make it undecidable, but it has a unary operation +1, known as the successor function. WS2S is a generalization to tree structures. Since the theories are monadic second-order logics, we call our tool MONA. 
+	</longdescription>
+</pkgmetadata>

@@ -1,0 +1,11 @@
+--- a/Mem/gnuc.h	2014-11-04 11:27:16.088499790 +0100
++++ b/Mem/gnuc.h	2014-11-04 11:27:26.926563641 +0100
+@@ -29,7 +29,7 @@
+ #define GNUC_NORETURN __attribute__ ((__noreturn__))
+ #define GNUC_CONST __attribute__ ((__const__))
+ #define GNUC_FORMAT(a,s,f) __attribute__ ((__format__ (a, s, f)))
+-#define GNUC_INLINE __inline__
++#define GNUC_INLINE
+ 
+ #if (__GNUC__ > 2) || (__GNUC == 2 && __GNUC_MINOR >= 96)
+ # define GNUC_PURE __attribute__ ((__pure__))

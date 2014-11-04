@@ -1,0 +1,5 @@
+*mona-1.4.15 (04 Nov 2014)
+
+  04 Nov 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +files/mona-remove-inline.patch, +metadata.xml, +mona-1.4.15.ebuild:
+  sci-mathematics/mona: new ebuild
