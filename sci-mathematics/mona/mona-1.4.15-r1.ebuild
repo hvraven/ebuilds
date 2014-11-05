@@ -18,7 +18,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="emacs static-libs"
 
-DEPEND=""
+DEPEND="virtual/yacc"
 RDEPEND="emacs? ( virtual/emacs )"
 
 S="${WORKDIR}/${PN}-$(get_version_component_range 1-2)"
