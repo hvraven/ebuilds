@@ -6,7 +6,7 @@
 EAPI=5
 
 PYTHON_COMPAT=( python{2_7,3_2,3_3,3_4} )
-inherit bash-completion-r1 python-r1 git-2
+inherit bash-completion-r1 distutils-r1 git-2
 
 DESCRIPTION="python -c, with tab completion and shorthand"
 HOMEPAGE="https://github.com/Russell91/pythonpy"
@@ -21,19 +21,10 @@ DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-install_py() {
-	if python_is_python3 ; then
-		python_newscript extras/py3 py
-		python_newscript extras/pycompleter3 pycompleter
-	else
-		python_doscript py
-		python_doscript extras/pycompleter
-	fi
-}
-
 src_install() {
-	python_foreach_impl install_py
+	distutils-r1_src_install
 
+	rm -r "${D}/usr/bash_completion.d"
 	newbashcomp "${FILESDIR}/py.bashcomp" py
 	insinto /usr/share/zsh/site-functions
 	newins "${FILESDIR}/py.zshcomp" _py
