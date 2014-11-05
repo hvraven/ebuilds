@@ -23,6 +23,8 @@ RDEPEND="emacs? ( virtual/emacs )"
 
 S="${WORKDIR}/${PN}-$(get_version_component_range 1-2)"
 
+SITEFILE="50${PN}-gentoo.el"
+
 src_prepare() {
 	# remove forced optimizations
 	sed -e '/CXXFLAGS/ s/-O3//' \
@@ -54,5 +56,14 @@ src_install() {
 	rm "${D}/usr/share/mona-mode.el"
 	if use emacs ; then
 		elisp-install ${PN} *.el
+		elisp-site-file-install "${FILESDIR}/${SITEFILE}"
 	fi
+}
+
+pkg_postinst() {
+	elisp-site-regen
+}
+
+pkg_postrm() {
+	elisp-site-regen
 }

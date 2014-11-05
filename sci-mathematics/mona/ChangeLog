@@ -1,3 +1,9 @@
+*mona-1.4.15-r1 (05 Nov 2014)
+
+  05 Nov 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +files/50mona-gentoo.el, +mona-1.4.15-r1.ebuild, -mona-1.4.15.ebuild:
+  sci-mathematics/mona: added emacs sitefile
+
 *mona-1.4.15 (04 Nov 2014)
 
   04 Nov 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
