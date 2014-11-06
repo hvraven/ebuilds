@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit eutils fcaps linux-info
+inherit eutils fcaps flag-o-matic linux-info
 
 DESCRIPTION="Command line tools for developing high performance multi threaded programs"
 HOMEPAGE="http://code.google.com/p/likwid/"
@@ -41,10 +41,11 @@ src_prepare() {
 		'ENABLE_SNB_UNCORE = false#' >> config.mk
 
 	# store version data in man pages
-	sed -i doc/* -e 's/<DATE>/29.11.2012/g' \
+	sed -i doc/* -e 's/<DATE>/12.02.2014/g' \
 		-e "s/VERSION/${PV}/g" || die
 
 	# fix compiler flags
+	append-cflags -std=c99
 	sed -i make/include_GCC.mk -e '/^CC/d' -e '/^AS/d' -e '/^AR/d' \
 		-e '/^CFLAGS/d' -e '/^CPPFLAGS/d' \
 		-e 's/^FCFLAGS *=\(.*\)/FCFLAGS += \1/' || die
