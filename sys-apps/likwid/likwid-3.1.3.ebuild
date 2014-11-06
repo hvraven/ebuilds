@@ -1,4 +1,4 @@
-# Copyright 2013-2013 Gentoo Foundation
+# Copyright 2013-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,7 +8,7 @@ inherit eutils fcaps linux-info
 
 DESCRIPTION="Command line tools for developing high performance multi threaded programs"
 HOMEPAGE="http://code.google.com/p/likwid/"
-SRC_URI="http://${PN}.googlecode.com/files/${P}.tar.gz"
+SRC_URI="http://ftp.fau.de/pub/likwid/${P}.tar.gz"
 
 SLOT="0"
 LICENSE="GPL-3"
@@ -18,8 +18,6 @@ IUSE="+access-daemon fortran static-libs +suid uncore"
 DEPEND="fortran? ( >=sys-devel/gcc-4.2[fortran] )"
 
 CONFIG_CHECK="~X86_MSR"
-
-S="${WORKDIR}/${P%.?}"
 
 src_prepare() {
 	# set configuration options
@@ -47,16 +45,16 @@ src_prepare() {
 		-e "s/VERSION/${PV}/g" || die
 
 	# fix compiler flags
-	sed -i include_GCC.mk -e '/^CC/d' -e '/^AS/d' -e '/^AR/d' \
+	sed -i make/include_GCC.mk -e '/^CC/d' -e '/^AS/d' -e '/^AR/d' \
 		-e '/^CFLAGS/d' -e '/^CPPFLAGS/d' \
 		-e 's/^FCFLAGS *=\(.*\)/FCFLAGS += \1/' || die
 	sed -i src/access-daemon/Makefile \
 		-e '/^CC/d' -e 's/^CFLAGS *=\(.*\)/CFLAGS := \1 $(CFLAGS)/' || die
-	sed -i include_GCC.mk \
+	sed -i make/include_GCC.mk \
 		-e 's/LFLAGS *=\(.*\)/LFLAGS = \1 $(LDFLAGS)/' || die
 
 	# add missing sonames
-	echo 'SHARED_LFLAGS += -Wl,-soname,$@' >> include_GCC.mk
+	echo 'SHARED_LFLAGS += -Wl,-soname,$@' >> make/include_GCC.mk
 
 	# overwrite mempolicy and schedaffinity checks
 	if kernel_is -ge 3 7 ; then
