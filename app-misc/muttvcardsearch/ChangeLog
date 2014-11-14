@@ -1,0 +1,5 @@
+*muttvcardsearch-1.9 (14 Nov 2014)
+
+  14 Nov 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +muttvcardsearch-1.9.ebuild:
+  app-misc/muttvcardsearch: new ebuild
