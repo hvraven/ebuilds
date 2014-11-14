@@ -9,7 +9,7 @@ inherit elisp-common eutils multilib versionator
 
 MY_PV=$(replace_version_separator 2 -)
 
-DESCRIPTION="Mona is a solver for weak second-order logics"
+DESCRIPTION="Mona is a solver for weak monadic second-order logics"
 HOMEPAGE="http://www.brics.dk/mona/"
 SRC_URI="http://www.brics.dk/mona/download/${PN}-${MY_PV}.tar.gz"
 
@@ -50,8 +50,7 @@ src_compile() {
 src_install() {
 	default
 
-	# remove libtool files
-	rm ${D}/usr/$(get_libdir)/*.la
+	prune_libtool_files --all
 
 	rm "${D}/usr/share/mona-mode.el"
 	if use emacs ; then
