@@ -1,3 +1,7 @@
+  07 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  hash-slinger-2.6.ebuild:
+  net-dns/hash-slinger: fixed libreswan dependency
+
 *hash-slinger-2.6 (07 Jan 2015)
 
   07 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

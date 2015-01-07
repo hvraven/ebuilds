@@ -21,7 +21,7 @@ RDEPEND="net-dns/unbound[python,$PYTHON_USEDEP]
 	dev-python/ipaddr[$PYTHON_USEDEP]
 	dev-python/m2crypto[$PYTHON_USEDEP]
 	gnupg? ( dev-python/python-gnupg[$PYTHON_USEDEP] )
-	ipsec? ( net-misc/libreswan )
+	ipsec? ( net-misc/libreswan[dnssec] )
 	sshfp? ( net-misc/openssh )"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
