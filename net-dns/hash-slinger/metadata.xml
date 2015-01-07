@@ -7,6 +7,7 @@
 	</maintainer>
 	<use>
 		<flag name='gnupg'>Enable support for OPENPGPKEY records</flag>
+		<flag name='ipsec'>Enable support for libreswan IPSECKEY records</flag>
 		<flag name='sshfp'>Enable support for generating sshfp entries</flag>
 	</use>
 </pkgmetadata>

@@ -1,3 +1,9 @@
+*hash-slinger-2.6 (07 Jan 2015)
+
+  07 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +hash-slinger-2.6.ebuild, -hash-slinger-2.5.ebuild, metadata.xml:
+  net-dns/hash-slinger: version bump
+
   05 Jun 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   hash-slinger-2.5.ebuild, metadata.xml:
   net-dns/hash-slinger: make sshfp and gnupg conditional
