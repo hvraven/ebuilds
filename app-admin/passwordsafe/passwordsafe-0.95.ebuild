@@ -27,7 +27,7 @@ COMMON_DEPEND="dev-libs/xerces-c
 		sys-auth/libyubikey
 		sys-auth/ykpers
 		)"
-DEPEND="${COMMOND_DEPEND}
+DEPEND="${COMMON_DEPEND}
 	>=sys-devel/make-3.81"
 RDEPEND="${COMMON_DEPEND}"
 

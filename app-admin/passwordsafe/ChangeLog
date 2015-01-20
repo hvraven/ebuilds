@@ -1,3 +1,7 @@
+  20 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  passwordsafe-0.95.ebuild:
+  app-admin/passwordsafe: fixed typo in DEPEND
+
 *passwordsafe-0.95 (13 Jan 2015)
 
   13 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
