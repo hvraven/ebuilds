@@ -5,7 +5,7 @@
 
 EAPI=5
 
-inherit eutils flag-o-matic
+inherit eutils flag-o-matic wxwidgets
 
 MY_P="pwsafe-${PV}BETA"
 DESCRIPTION="Password manager with wxGTK based frontend"
@@ -22,7 +22,7 @@ COMMON_DEPEND="dev-libs/xerces-c
 	sys-devel/gettext
 	x11-libs/libXt
 	x11-libs/libXtst
-	x11-libs/wxGTK:3.0
+	x11-libs/wxGTK:3.0[X]
 	yubikey? (
 		sys-auth/libyubikey
 		sys-auth/ykpers
@@ -61,9 +61,7 @@ src_configure() {
 		export NO_YUBI=1
 	fi
 
-	# slot 3.0 is required, but not enforced by the build system. This is
-	# the easiest way to fix this
-	export WX_CONFIG="wx-config --version=3.0"
+	WX_GTK_VER=3.0 need-wxwidgets unicode
 
 	append-cxxflags -std=c++11
 }

@@ -1,3 +1,10 @@
+*passwordsafe-0.95.1 (10 Feb 2015)
+
+  10 Feb 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +passwordsafe-0.95.1.ebuild, -passwordsafe-0.95.ebuild:
+  app-admin/passwordsafe: version bump  also now uses the wxwidgets eclass
+  instead of a quirk to set the version
+
   20 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   passwordsafe-0.95.ebuild:
   app-admin/passwordsafe: fixed typo in DEPEND
