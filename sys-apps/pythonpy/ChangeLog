@@ -1,3 +1,9 @@
+*pythonpy-0.3.8 (10 Mar 2015)
+
+  10 Mar 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +pythonpy-0.3.8.ebuild, pythonpy-9999.ebuild:
+  sys-apps/pythonpy: fix setup.py **** and versioned ebuild
+
   05 Nov 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   pythonpy-9999.ebuild:
   sys-apps/pythonpy: update nightly for distutils

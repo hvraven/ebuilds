@@ -6,15 +6,17 @@
 EAPI=5
 
 PYTHON_COMPAT=( python{2_7,3_2,3_3,3_4} )
-inherit bash-completion-r1 distutils-r1 git-2
+inherit bash-completion-r1 distutils-r1 vcs-snapshot
+
+COMMIT=c25a678bf2a00cf4a095cdab992ffd5c7ce7ecd4
 
 DESCRIPTION="python -c, with tab completion and shorthand"
 HOMEPAGE="https://github.com/Russell91/pythonpy"
-EGIT_REPO_URI="https://github.com/Russell91/pythonpy.git"
+SRC_URI="https://github.com/Russell91/pythonpy/tarball/$COMMIT -> $P.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="${PYTHON_DEPS}"
