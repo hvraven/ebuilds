@@ -1,4 +1,4 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -14,9 +14,9 @@ SRC_URI="http://binaries.openttd.org/releases/${MY_PV}/${MY_P}-source.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ppc ~x86"
-IUSE="aplaymidi debug dedicated doc iconv icu lzo +openmedia +png +timidity
-	+truetype +zlib"
+KEYWORDS=""
+IUSE="aplaymidi debug dedicated doc iconv icu +lzma lzo +openmedia +png
+	threads +timidity +truetype +zlib cpu_flags_x86_sse"
 REQUIRED_USE="
 	aplaymidi? ( !timidity )
 	timidity? ( !aplaymidi )
@@ -29,15 +29,16 @@ RESTRICT="test"
 COMMON_DEPS="
 	!dedicated? (
 		media-libs/libsdl[sound,X,video]
-		icu? ( dev-libs/icu )
+		icu? ( dev-libs/icu:= )
 		truetype? (
 			media-libs/fontconfig
 			media-libs/freetype:2
 		)
 	)
 	lzo? ( dev-libs/lzo:2 )
+	lzma? ( app-arch/xz-utils )
 	iconv? ( virtual/libiconv )
-	png? ( media-libs/libpng )
+	png? ( media-libs/libpng:= )
 	zlib? ( sys-libs/zlib )"
 DEPEND="
 	${COMMON_DEPS}
@@ -52,7 +53,7 @@ RDEPEND="
 		aplaymidi? ( media-sound/alsa-utils )
 		timidity?  ( media-sound/timidity++ )
 	)
-	openmedia? ( >=games-misc/opengfx-0.4.6 )
+	openmedia? ( >=games-misc/opengfx-0.5.1 )
 	"
 
 S="${WORKDIR}/${MY_P}"
@@ -73,6 +74,7 @@ src_configure() {
 		use aplaymidi && myopts="${myopts} --with-midi='/usr/bin/aplaymidi'"
 		myopts="${myopts}
 			$(use_with truetype freetype)
+			$(use_with truetype fontconfig)
 			$(use_with icu)
 			--with-sdl"
 	fi
@@ -95,9 +97,12 @@ src_configure() {
 		--without-libtimidity \
 		${myopts} \
 		$(use_with iconv) \
-		$(use_with png) \
+		$(use_with lzma liblzma) \
 		$(use_with lzo liblzo2) \
+		$(use_with png) \
+		$(use_with threads) \
 		$(use_with zlib) \
+		$(use_with cpu_flags_x86_sse sse) \
 		|| die
 }
 
