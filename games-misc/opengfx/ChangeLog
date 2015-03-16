@@ -1,0 +1,5 @@
+*opengfx-0.5.2_rc1 (16 Mar 2015)
+
+  16 Mar 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +opengfx-0.5.2_rc1.ebuild:
+  games-misc/opengfx version bump (rc for openttd-1.5.0_beta)
