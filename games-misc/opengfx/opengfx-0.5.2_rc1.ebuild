@@ -18,6 +18,7 @@ IUSE=""
 RESTRICT="test" # nml version affects the checksums that the test uses (bug #451444)
 
 DEPEND=">=games-util/nml-0.4.0
+	app-text/dos2unix
 	games-util/grfcodec"
 RDEPEND=""
 
