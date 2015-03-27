@@ -8,7 +8,7 @@ EAPI=5
 PYTHON_COMPAT=( python{2_7,3_2,3_3,3_4} )
 inherit bash-completion-r1 distutils-r1 vcs-snapshot
 
-COMMIT=c25a678bf2a00cf4a095cdab992ffd5c7ce7ecd4
+COMMIT=22fca19952c391f1665a2f1448e75dc2202b994a
 
 DESCRIPTION="python -c, with tab completion and shorthand"
 HOMEPAGE="https://github.com/Russell91/pythonpy"
