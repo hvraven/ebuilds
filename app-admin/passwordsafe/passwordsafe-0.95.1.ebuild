@@ -1,9 +1,10 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
-#!/bin/bash
 
 EAPI=5
+
+WX_GTK_VER="3.0"
 
 inherit eutils flag-o-matic wxwidgets
 
@@ -22,9 +23,8 @@ COMMON_DEPEND="dev-libs/xerces-c
 	sys-devel/gettext
 	x11-libs/libXt
 	x11-libs/libXtst
-	x11-libs/wxGTK:3.0[X]
+	x11-libs/wxGTK:${WX_GTK_VER}[X]
 	yubikey? (
-		sys-auth/libyubikey
 		sys-auth/ykpers
 		)"
 DEPEND="${COMMON_DEPEND}
@@ -61,8 +61,9 @@ src_configure() {
 		export NO_YUBI=1
 	fi
 
-	WX_GTK_VER=3.0 need-wxwidgets unicode
+	need-wxwidgets unicode
 
+	strip-flags
 	append-cxxflags -std=c++11
 }
 
