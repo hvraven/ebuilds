@@ -14,7 +14,7 @@ SRC_URI="http://binaries.openttd.org/releases/${MY_PV}/${MY_P}-source.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
 IUSE="aplaymidi debug dedicated doc iconv icu +lzma lzo +openmedia +png
 	threads +timidity +truetype +zlib cpu_flags_x86_sse"
 REQUIRED_USE="
