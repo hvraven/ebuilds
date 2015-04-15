@@ -1,0 +1,5 @@
+*attic-0.14 (15 Apr 2015)
+
+  15 Apr 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +attic-0.14.ebuild, +metadata.xml:
+  app-backup/attic: new ebuild
