@@ -5,4 +5,7 @@
 		<email>hendrik@consetetur.de</email>
 		<name>Hendrik v. Raven (lorem_ipsum)</name>
 	</maintainer>
+	<use>
+		<flag name='fuse'>Allows to mount archives as FUSE filesystem</flag>
+	</use>
 </pkgmetadata>

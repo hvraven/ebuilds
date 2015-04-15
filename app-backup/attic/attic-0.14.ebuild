@@ -17,12 +17,12 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 LICENSE="LGPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="fuse"
 
 S="${WORKDIR}/${MY_P}"
 
 DEPEND="${PYTHON_DEPS}
 	dev-python/msgpack[${PYTHON_USEDEP}]
-	dev-python/llfuse[${PYTHON_USEDEP}]
-	dev-python/pyopenssl[${PYTHON_USEDEP}]"
+	dev-python/pyopenssl[${PYTHON_USEDEP}]
+	fuse? ( dev-python/llfuse[${PYTHON_USEDEP}] )"
 RDEPEND="${DEPEND}"
