@@ -1,3 +1,9 @@
+*nml-0.4.1 (17 Apr 2015)
+
+  17 Apr 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +nml-0.4.1.ebuild, nml-9999.ebuild:
+  games-util/nml: version bump / nightly now correct
+
   16 Mar 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   +files/nml-9999-setup.py-add-missing-packages.patch, nml-9999.ebuild:
   games-util/nml: updated nightly for opengfx-0.5.2  nml-0.4.0 release is
