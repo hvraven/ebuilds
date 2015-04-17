@@ -1,3 +1,9 @@
+*pythonpy-0.4.2 (17 Apr 2015)
+
+  17 Apr 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +pythonpy-0.4.2.ebuild, -pythonpy-0.4.0.ebuild:
+  sys-apps/pythonpy: version bump
+
 *pythonpy-0.4.0 (27 Mar 2015)
 
   27 Mar 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

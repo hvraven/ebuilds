@@ -21,7 +21,6 @@ IUSE=""
 
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
-REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_prepare() {
 	# remove broken check for completion dirs
