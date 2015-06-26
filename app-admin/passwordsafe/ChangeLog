@@ -1,3 +1,9 @@
+*passwordsafe-0.96 (26 Jun 2015)
+
+  26 Jun 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +passwordsafe-0.96.ebuild, -passwordsafe-0.95.1.ebuild:
+  app-admin/passwordsafe: version bump
+
   28 Mar 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   passwordsafe-0.95.1.ebuild:
   app-admin/passwordsafe: minor improvements
