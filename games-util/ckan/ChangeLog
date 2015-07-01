@@ -1,0 +1,5 @@
+*ckan-1.10.0 (01 Jul 2015)
+
+  01 Jul 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +ckan-1.10.0.ebuild, +metadata.xml:
+  games-util/ckan: new ebuild
