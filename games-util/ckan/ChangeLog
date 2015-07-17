@@ -1,3 +1,9 @@
+*ckan-1.10.3 (17 Jul 2015)
+
+  17 Jul 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +ckan-1.10.3.ebuild, -ckan-1.10.2.ebuild:
+  games-util/ckan: version bump
+
 *ckan-1.10.2 (16 Jul 2015)
 
   16 Jul 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
