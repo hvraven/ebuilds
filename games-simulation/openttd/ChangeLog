@@ -1,3 +1,9 @@
+*openttd-1.5.2_rc1 (11 Aug 2015)
+
+  11 Aug 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +openttd-1.5.2_rc1.ebuild:
+  games-simulation/openttd: new release candidate
+
 *openttd-1.5.1 (15 Jul 2015)
 
   15 Jul 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
