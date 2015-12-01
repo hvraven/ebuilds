@@ -1,0 +1,5 @@
+*yubico-pam-2.20 (01 Dec 2015)
+
+  01 Dec 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +yubico-pam-2.20.ebuild:
+  sys-auth/yubico-pam: new ebuild
