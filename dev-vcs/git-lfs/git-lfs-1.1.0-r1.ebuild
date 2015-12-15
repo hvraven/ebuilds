@@ -21,6 +21,9 @@ RDEPEND=""
 
 EGO_PN="github.com/github/git-lfs"
 
+# stripping removes the interpreter information making binary unusable
+RESTRICT="strip"
+
 src_compile() {
 	golang-build_src_compile
 	ronn -r src/github.com/github/git-lfs/docs/man/*.ronn || die
