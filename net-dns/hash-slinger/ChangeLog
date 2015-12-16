@@ -1,3 +1,7 @@
+  16 Dec 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  hash-slinger-2.6.ebuild:
+  net-dns/hash-slinger: PYTHON_COMPAT as array & header
+
   07 Jan 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   hash-slinger-2.6.ebuild:
   net-dns/hash-slinger: fixed libreswan dependency
