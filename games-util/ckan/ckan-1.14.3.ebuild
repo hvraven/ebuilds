@@ -1,6 +1,7 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
+#!/bin/bash
 
 EAPI=5
 
@@ -21,6 +22,16 @@ DEPEND="dev-lang/mono
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
+
+src_prepare() {
+	default
+
+	# remove git calls from bin/build since the tarball doesn't contain
+	# the git repo
+	sed -i bin/build \
+		-e "s/my \$VERSION.*/my \$VERSION = \"${PV}\";/" \
+		-e 's/my $branch.*/my $branch = "";/' || die
+}
 
 src_install() {
 	insinto /usr/$(get_libdir)/${PN}/
