@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 #!/bin/sh
@@ -32,7 +32,7 @@ src_install() {
 	progs=tlsa
 	use sshfp && progs="$progs sshfp"
 	use gnupg && progs="$progs openpgpkey"
-	use ipsec && progs="$progs ipsec"
+	use ipsec && progs="$progs ipseckey"
 	for bin in $progs ; do
 		doman ${bin}.1
 		python_foreach_impl python_doscript ${bin}
