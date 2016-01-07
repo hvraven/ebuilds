@@ -1,0 +1,5 @@
+*abduco-0.4 (07 Jan 2016)
+
+  07 Jan 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +abduco-0.4.ebuild, +metadata.xml:
+  app-misc/abduco: version bump
