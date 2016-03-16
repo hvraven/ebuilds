@@ -1,3 +1,9 @@
+*ckan-1.16.1 (16 Mar 2016)
+
+  16 Mar 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +ckan-1.16.1.ebuild, -ckan-1.16.0.ebuild:
+  games-util/ckan: version bump
+
   24 Dec 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   ckan-1.14.3.ebuild:
   games-util/ckan: fix git call during build & new headers
