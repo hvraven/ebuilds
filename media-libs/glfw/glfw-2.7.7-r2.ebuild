@@ -17,7 +17,8 @@ IUSE="examples static-libs"
 DEPEND="x11-libs/libX11[${MULTILIB_USEDEP}]
 	x11-libs/libXrandr[${MULTILIB_USEDEP}]
 	virtual/glu[${MULTILIB_USEDEP}]
-	virtual/opengl[${MULTILIB_USEDEP}]"
+	virtual/opengl[${MULTILIB_USEDEP}]
+	!media-libs/glfw:0"
 RDEPEND="${DEPEND}"
 
 src_prepare() {

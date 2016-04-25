@@ -20,7 +20,8 @@ RDEPEND="x11-libs/libXrandr[${MULTILIB_USEDEP}]
 	x11-libs/libXxf86vm[${MULTILIB_USEDEP}]
 	x11-libs/libXinerama[${MULTILIB_USEDEP}]
 	x11-libs/libXcursor[${MULTILIB_USEDEP}]
-	virtual/opengl[${MULTILIB_USEDEP}]"
+	virtual/opengl[${MULTILIB_USEDEP}]
+	!media-libs/glfw:0"
 DEPEND=${RDEPEND}
 
 multilib_src_configure() {

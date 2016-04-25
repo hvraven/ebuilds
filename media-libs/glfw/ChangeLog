@@ -1,3 +1,11 @@
+*glfw-2.7.7-r2 (25 Apr 2016)
+*glfw-3.1.2-r2 (25 Apr 2016)
+
+  25 Apr 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +glfw-2.7.7-r2.ebuild, +glfw-3.1.2-r2.ebuild, -glfw-2.7.7-r1.ebuild,
+  -glfw-3.1.2-r1.ebuild:
+  media-libs/glfw: blocker against glfw:0
+
 *glfw-2.7.7-r1 (23 Apr 2016)
 *glfw-3.1.2-r1 (23 Apr 2016)
 
