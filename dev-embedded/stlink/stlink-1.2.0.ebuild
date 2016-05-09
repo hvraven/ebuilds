@@ -5,18 +5,19 @@
 
 EAPI=5
 
-inherit autotools git-r3 linux-info udev
+inherit autotools linux-info udev
 
 DESCRIPTION="On board debugger driver for stm32-discovery boards."
 HOMEPAGE="https://github.com/texane/stlink"
-EGIT_REPO_URI="https://github.com/texane/stlink.git"
+SRC_URI="https://github.com/texane/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
-IUSE="stlinkv1"
+KEYWORDS="~amd64"
+IUSE="gtk stlinkv1"
 
-DEPEND="virtual/libusb:1"
+DEPEND="virtual/libusb:1
+	gtk? ( x11-libs/gtk+:3 )"
 RDEPEND="${DEPEND}"
 
 pkg_setup() {
@@ -30,12 +31,19 @@ pkg_setup() {
 }
 
 src_prepare() {
-	eautoreconf
+	default
+
+	eautoreconf || die
+}
+
+src_configure() {
+	econf \
+		$(use_with gtk)
 }
 
 src_install() {
 	default
-	udev_dorules etc/udev/rules.d/*
+	udev_dorules 49-stlink*.rules
 	insinto /etc/modprobe.d
 	use stlinkv1 && doins stlink_v1.modprobe.conf
 }

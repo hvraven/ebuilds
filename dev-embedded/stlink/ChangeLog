@@ -1,3 +1,9 @@
+*stlink-1.2.0 (09 May 2016)
+
+  09 May 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +stlink-1.2.0.ebuild, stlink-9999.ebuild:
+  dev-embedded/stlink: correct release
+
 *stlink-9999 (17 Nov 2015)
 
   17 Nov 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
