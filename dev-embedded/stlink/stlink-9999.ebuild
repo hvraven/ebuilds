@@ -14,9 +14,10 @@ EGIT_REPO_URI="https://github.com/texane/stlink.git"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS=""
-IUSE="stlinkv1"
+IUSE="gtk stlinkv1"
 
-DEPEND="virtual/libusb:1"
+DEPEND="virtual/libusb:1
+	gtk? ( x11-libs/gtk+:3 )"
 RDEPEND="${DEPEND}"
 
 pkg_setup() {
@@ -30,7 +31,14 @@ pkg_setup() {
 }
 
 src_prepare() {
-	eautoreconf
+	default
+
+	eautoreconf || die
+}
+
+src_configure() {
+	econf \
+		$(use_with gtk)
 }
 
 src_install() {
