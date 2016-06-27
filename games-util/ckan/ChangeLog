@@ -1,3 +1,7 @@
+  27 Jun 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  -ckan-1.14.3.ebuild:
+  games-util/ckan: remove old version
+
 *ckan-1.18.0 (27 Jun 2016)
 
   27 Jun 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
