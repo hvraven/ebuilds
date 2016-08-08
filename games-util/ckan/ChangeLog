@@ -1,3 +1,11 @@
+*ckan-1.18.1 (08 Aug 2016)
+
+  08 Aug 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +ckan-1.18.1.ebuild:
+  games-util/ckan: version bump & unbundle log4net  still a lot of bundled
+  libraries, but the others are not in the main tree and the dotnet overlay is a
+  mess.
+
   27 Jun 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   -ckan-1.14.3.ebuild:
   games-util/ckan: remove old version
