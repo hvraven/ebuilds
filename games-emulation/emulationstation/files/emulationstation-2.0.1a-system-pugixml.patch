@@ -1,0 +1,20 @@
+diff -Naur emulationstation-2.0.1a-orig/CMakeLists.txt emulationstation-2.0.1a/CMakeLists.txt
+--- emulationstation-2.0.1a-orig/CMakeLists.txt	2016-09-09 13:48:32.895618504 +0100
++++ emulationstation-2.0.1a/CMakeLists.txt	2016-09-09 13:48:55.588797757 +0100
+@@ -48,6 +48,7 @@
+ find_package(Boost REQUIRED COMPONENTS system filesystem date_time locale)
+ find_package(Eigen3 REQUIRED)
+ find_package(CURL REQUIRED)
++find_package(pugixml REQUIRED)
+ 
+ #add ALSA for Linux
+ if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 
+diff -Naur emulationstation-2.0.1a-orig/external/CMakeLists.txt emulationstation-2.0.1a/external/CMakeLists.txt
+--- emulationstation-2.0.1a-orig/external/CMakeLists.txt	2016-09-09 13:48:32.905618583 +0100
++++ emulationstation-2.0.1a/external/CMakeLists.txt	2016-09-09 13:49:00.888839621 +0100
+@@ -2,4 +2,3 @@
+ # package managers are included with the project (in the 'external' folder)
+ 
+ add_subdirectory("nanosvg")
+-add_subdirectory("pugixml")

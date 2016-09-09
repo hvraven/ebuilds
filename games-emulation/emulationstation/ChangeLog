@@ -1,0 +1,7 @@
+*emulationstation-2.0.1a (09 Sep 2016)
+
+  09 Sep 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +emulationstation-2.0.1a.ebuild,
+  +files/emulationstation-2.0.1a-cxxflags.patch,
+  +files/emulationstation-2.0.1a-system-pugixml.patch, +metadata.xml:
+  games-emulation/emulationstation: new ebuild

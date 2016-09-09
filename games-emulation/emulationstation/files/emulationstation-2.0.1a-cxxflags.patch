@@ -1,0 +1,22 @@
+diff -Naur emulationstation-2.0.1a-orig/CMakeLists.txt emulationstation-2.0.1a/CMakeLists.txt
+--- emulationstation-2.0.1a-orig/CMakeLists.txt	2016-09-09 14:32:09.778469774 +0100
++++ emulationstation-2.0.1a/CMakeLists.txt	2016-09-09 14:32:41.251726674 +0100
+@@ -70,17 +70,7 @@
+     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /MP") #multi-processor compilation
+ endif()
+ 
+-if(CMAKE_COMPILER_IS_GNUCXX)
+-    #check for G++ 4.7+
+-    execute_process(COMMAND ${CMAKE_CXX_COMPILER} -dumpversion OUTPUT_VARIABLE G++_VERSION)
+-    if (G++_VERSION VERSION_LESS 4.7)
+-            message(SEND_ERROR "You need at least G++ 4.7 to compile EmulationStation!")
+-    endif()
+-
+-    #set up compiler flags for GCC
+-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-attributes -O3") #support C++11 for std::, optimize
+-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -O3")  #-s = strip binary
+-endif()
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-attributes")
+ 
+ if(${GLSystem} MATCHES "Desktop OpenGL")
+     add_definitions(-DUSE_OPENGL_DESKTOP)
