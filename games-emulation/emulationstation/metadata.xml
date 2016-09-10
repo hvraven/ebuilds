@@ -5,13 +5,4 @@
 		<email>hendrik@consetetur.de</email>
 		<name>Hendrik v. Raven (lorem_ipsum)</name>
 	</maintainer>
-	<use>
-		<flag name="wii">Install dependency to emulate Nintendo Wii games.</flag>
-		<flag name="gba">Install dependency to emulate Nintendo Gameboy Advance games.</flag>
-		<flag name="gamecube">Install dependency to emulate Nintendo Gamecube games.</flag>
-		<flag name="n64">Install dependency to emulate Nintendo N64 games.</flag>
-		<flag name="nes">Install dependency to emulate Nintendo Entertainment System games.</flag>
-		<flag name="snes">Install dependency to emulate Nintendo SNES games.</flag>
-		<flag name="atari2600">Install dependency to emulate Atari 2600 games.</flag>
-	</use>
 </pkgmetadata>

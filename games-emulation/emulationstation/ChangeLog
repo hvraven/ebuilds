@@ -1,3 +1,10 @@
+*emulationstation-2.0.1a-r1 (10 Sep 2016)
+
+  10 Sep 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +emulationstation-2.0.1a-r1.ebuild, -emulationstation-2.0.1a.ebuild,
+  metadata.xml:
+  games-emulation/emulationstation: drop use & add desktop
+
 *emulationstation-2.0.1a (09 Sep 2016)
 
   09 Sep 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
