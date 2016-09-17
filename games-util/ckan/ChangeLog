@@ -1,3 +1,9 @@
+*ckan-1.20.0 (17 Sep 2016)
+
+  17 Sep 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +ckan-1.20.0.ebuild:
+  games-util/ckan: version bump
+
 *ckan-1.18.1 (08 Aug 2016)
 
   08 Aug 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
