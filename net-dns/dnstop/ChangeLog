@@ -1,0 +1,7 @@
+*dnstop-20121017 (25 Sep 2016)
+*dnstop-20140915 (25 Sep 2016)
+
+  25 Sep 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +dnstop-20121017.ebuild, +dnstop-20140915.ebuild,
+  +files/dnstop-pkg-config.patch, +metadata.xml:
+  net-dns/dnstop: use pkg-config for ncurses & eapi 6
