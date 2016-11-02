@@ -1,0 +1,5 @@
+*sir-9999 (02 Nov 2016)
+
+  02 Nov 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +sir-9999.ebuild:
+  net-misc/sir: new ebuild
