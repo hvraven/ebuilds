@@ -34,7 +34,11 @@ src_install() {
 
 	insinto /etc/sir
 	newins examples/conf.yaml conf.yaml.example
+	rm examples/conf.yaml
 
 	keepdir /etc/sir/{rollover,sign}
 	keepdir /var/lib/sir/{keys,csrs,certs,chains}
+
+	dodoc README.md
+	dodoc -r examples
 }
