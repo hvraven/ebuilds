@@ -1,0 +1,5 @@
+*evil-1.2.12 (03 Nov 2016)
+
+  03 Nov 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +evil-1.2.12.ebuild, +files/50evil-gentoo.el, +metadata.xml:
+  app-emacs/evil: updated version
