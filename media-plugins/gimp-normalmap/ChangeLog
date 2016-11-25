@@ -1,0 +1,6 @@
+*gimp-normalmap-1.2.3 (25 Nov 2016)
+
+  25 Nov 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +files/gimp-normalmap-1.2.3-makefile.patch, +gimp-normalmap-1.2.3.ebuild,
+  +metadata.xml:
+  media-plugins/gimp-normalmap: new ebuild

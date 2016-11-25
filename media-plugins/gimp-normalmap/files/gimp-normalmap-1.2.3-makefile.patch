@@ -1,0 +1,20 @@
+--- a/Makefile.linux	2016-11-25 10:45:52.351897709 +0100
++++ b/Makefile.linux	2016-11-25 10:46:26.822148162 +0100
+@@ -1,15 +1,13 @@
+ 
+ GIMPTOOL=gimptool-2.0
+ 
+-CC=gcc
+-CFLAGS=-O3 -Wall `pkg-config --cflags gtk+-2.0 gtkglext-1.0 gimp-2.0`
++CFLAGS=`pkg-config --cflags gtk+-2.0 gtkglext-1.0 gimp-2.0 gimpui-2.0 glew`
+ 
+ TARGET=normalmap
+ 
+ OBJS=normalmap.o preview3d.o scale.o
+ 
+-LIBS=`pkg-config --libs gtk+-2.0 gtkglext-1.0 gimp-2.0 gimpui-2.0` \
+--L/usr/X11R6/lib -lGLEW
++LIBS=`pkg-config --libs gtk+-2.0 gtkglext-1.0 gimp-2.0 gimpui-2.0 glew`
+ 
+ all: $(TARGET)
+ 
