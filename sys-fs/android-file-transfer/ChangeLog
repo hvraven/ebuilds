@@ -1,0 +1,5 @@
+*android-file-transfer-3.0 (25 Dec 2016)
+
+  25 Dec 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +android-file-transfer-3.0.ebuild, +metadata.xml:
+  sys-fs/android-file-transfer: new ebuild

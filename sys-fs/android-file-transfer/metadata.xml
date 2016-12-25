@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<use>
+		<flag name="fuse">Build the fuse based filesystem wrapper</flag>
+		<flag name="libusb">Use libusb instead of the internal USB support</flag>
+	</use>
+</pkgmetadata>
