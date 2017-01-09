@@ -1,3 +1,9 @@
+*yubico-pam-2.24 (09 Jan 2017)
+
+  09 Jan 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +yubico-pam-2.24.ebuild, metadata.xml:
+  sys-auth/yubico-pam: version bump
+
 *yubico-pam-2.20 (01 Dec 2015)
 
   01 Dec 2015; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
