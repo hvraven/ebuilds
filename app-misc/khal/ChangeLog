@@ -1,9 +1,0 @@
-  11 Dec 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
-  khal-9999.ebuild:
-  app-misc/khal: added missing PYTHON_DEPS
-
-*khal-9999 (10 Dec 2013)
-
-  10 Dec 2013; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
-  +khal-9999.ebuild, +metadata.xml:
-  app-misc/khal: new ebuild (based on andy overlay)
