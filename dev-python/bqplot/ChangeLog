@@ -1,0 +1,5 @@
+*bqplot-0.9.0 (30 Mar 2017)
+
+  30 Mar 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +bqplot-0.9.0.ebuild, +metadata.xml:
+  dev-python/bqplot: new ebuild
