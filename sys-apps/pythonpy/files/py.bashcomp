@@ -1,6 +1,6 @@
 _py()
 {
-    COMPREPLY=($(pycompleter "${COMP_WORDS[@]}" 2>/dev/null ))
+    COMPREPLY=($(pycompleter "${COMP_WORDS[@]}" 2>/dev/null | sed 's/.*1034h//'))
     if [[ ${COMPREPLY[0]} == '_longopt' ]]; then
         COMPREPLY=()
         _longopt 2>/dev/null
