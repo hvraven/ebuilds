@@ -1,0 +1,5 @@
+*traittypes-0.0.6 (30 Mar 2017)
+
+  30 Mar 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +traittypes-0.0.6.ebuild:
+  dev-python/traittypes: new ebuild  dependency for dev-python/bqplot
