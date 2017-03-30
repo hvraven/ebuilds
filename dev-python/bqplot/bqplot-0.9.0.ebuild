@@ -18,6 +18,6 @@ IUSE=""
 DEPEND=">=dev-python/ipywidgets-6.0.0[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.0[${PYTHON_USEDEP}]
 	>=dev-python/traittypes-0.0.6[${PYTHON_USEDEP}]
-	dev-python/numpy[${PYTHON_USEDEP}]
+	>=dev-python/numpy-1.10.4[${PYTHON_USEDEP}]
 	dev-python/pandas[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
