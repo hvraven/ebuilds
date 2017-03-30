@@ -15,11 +15,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="${PYTHON_DEPS}
-	>=dev-python/ipywidgets-6.0.0[${PYTHON_USEDEP}]
+DEPEND=">=dev-python/ipywidgets-6.0.0[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.0[${PYTHON_USEDEP}]
 	>=dev-python/traittypes-0.0.6[${PYTHON_USEDEP}]
 	dev-python/numpy[${PYTHON_USEDEP}]
-	dev-python/pandas[${PYTHON_USEDEP}]
-"
+	dev-python/pandas[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
