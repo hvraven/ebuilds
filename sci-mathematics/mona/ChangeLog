@@ -1,3 +1,9 @@
+*mona-1.4.17 (13 Apr 2017)
+
+  13 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +mona-1.4.17.ebuild, metadata.xml:
+  sci-mathematics/mona: version bump
+
   14 Nov 2014; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   mona-1.4.15-r1.ebuild:
   sci-mathematics/mona: use prune_libtool_files instead of hack
