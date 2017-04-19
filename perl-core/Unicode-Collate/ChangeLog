@@ -1,0 +1,5 @@
+*Unicode-Collate-1.190.0 (19 Apr 2017)
+
+  19 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +Unicode-Collate-1.190.0.ebuild, +metadata.xml:
+  perl-core/Unicode-Collate: new ebuild  biber-2.7 dependency
