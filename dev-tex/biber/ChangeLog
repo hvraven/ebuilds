@@ -1,0 +1,5 @@
+*biber-2.7 (19 Apr 2017)
+
+  19 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +biber-2.7.ebuild, +files/biber-2.7-drop-mozilla-ca.patch, +metadata.xml:
+  dev-tex/biber: version bump
