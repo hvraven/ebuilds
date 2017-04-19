@@ -1,0 +1,5 @@
+*perl-Unicode-Collate-1.190.0 (19 Apr 2017)
+
+  19 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +perl-Unicode-Collate-1.190.0.ebuild:
+  virtual/perl-Unicode-Collate: new biber dep
