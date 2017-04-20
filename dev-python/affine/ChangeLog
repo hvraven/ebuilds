@@ -1,3 +1,9 @@
+*affine-2.0.0_p1 (20 Apr 2017)
+
+  20 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +affine-2.0.0_p1.ebuild, affine-1.2.0.ebuild:
+  dev-python/affine: version bump
+
   20 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   affine-1.2.0.ebuild:
   dev-python/affine: enable test suite
