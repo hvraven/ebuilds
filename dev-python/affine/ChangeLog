@@ -1,3 +1,7 @@
+  20 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  affine-1.2.0.ebuild, metadata.xml:
+  dev-python/affine: enable python3.6 support
+
 *affine-1.2.0 (03 Mar 2016)
 
   03 Mar 2016; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
