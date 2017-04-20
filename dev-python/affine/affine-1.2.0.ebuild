@@ -13,7 +13,15 @@ SRC_URI="mirror://pypi/a/${PN}/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="test"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND=""
+DEPEND="${RDEPEND}
+	test? (
+		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)"
+
+python_test_all() {
+	esetup.py test
+}
