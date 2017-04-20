@@ -10,7 +10,7 @@ inherit distutils-r1
 MY_PN="Bottleneck"
 MY_P="${MY_PN}-${PV}"
 
-DESCRIPTION="Fast NumPy array functions written in Cython"
+DESCRIPTION="Fast NumPy array functions written in C"
 HOMEPAGE="http://berkeleyanalytics.com/bottleneck"
 SRC_URI="mirror://pypi/B/${MY_PN}/${MY_P}.tar.gz"
 

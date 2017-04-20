@@ -1,3 +1,7 @@
+  20 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  bottleneck-1.2.0.ebuild:
+  dev-python/dnspython3: remove outdated  by now dnspython has python 3 support
+
 *bottleneck-1.2.0 (31 Mar 2017)
 
   31 Mar 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
