@@ -1,0 +1,5 @@
+*stig-0.5.0a (21 Apr 2017)
+
+  21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +stig-0.5.0a.ebuild:
+  net-p2p/stig: new ebuild
