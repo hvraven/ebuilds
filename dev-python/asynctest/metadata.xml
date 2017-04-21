@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<longdescription lang="en">
+		The package asynctest is built on top of the standard unittest module and cuts down boilerplate code when testing libraries for asyncio.
+	</longdescription>
+</pkgmetadata>
