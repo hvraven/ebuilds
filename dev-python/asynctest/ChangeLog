@@ -1,3 +1,7 @@
+  21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  asynctest-0.10.0.ebuild:
+  dev-python/asynctest: fix typo in test
+
 *asynctest-0.10.0 (21 Apr 2017)
 
   21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

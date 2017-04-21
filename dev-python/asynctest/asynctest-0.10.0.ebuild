@@ -19,5 +19,5 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 python_test() {
-	${eYTHON} -m unittest test || die
+	${PYTHON} -m unittest test || die
 }
