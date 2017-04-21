@@ -1,0 +1,5 @@
+*urwidtrees-1.0.3 (21 Apr 2017)
+
+  21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +urwidtrees-1.0.3.ebuild:
+  dev-python/urwidtrees: version bump for stig
