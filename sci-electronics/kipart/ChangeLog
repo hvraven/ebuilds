@@ -1,0 +1,6 @@
+*kipart-0.1.24 (21 Apr 2017)
+
+  21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +kipart-0.1.24.ebuild, +metadata.xml:
+  sci-electronics/kipart: new ebuild  TODO:  - python3_6 (waiting for deps)  -
+  tests
