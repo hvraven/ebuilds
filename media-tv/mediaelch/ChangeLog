@@ -1,0 +1,5 @@
+*mediaelch-2.4.2 (21 Apr 2017)
+
+  21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +mediaelch-2.4.2.ebuild, +metadata.xml:
+  media-tv/mediaelch: new ebuild
