@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="Simulating dynamics of open quantum systems in Python."
 HOMEPAGE="http://qutip.org"
-SRC_URI="http://qutip.org/downloads/${PV}/${P}.tar.gz"
+SRC_URI="https://github.com/qutip/qutip/archive/v$PV.tar.gz -> $P.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
