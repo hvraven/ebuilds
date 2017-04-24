@@ -1,0 +1,5 @@
+*xerox-0.4.1 (24 Apr 2017)
+
+  24 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +xerox-0.4.1.ebuild:
+  dev-python/xerox: new ebuild (optional tremc dep)
