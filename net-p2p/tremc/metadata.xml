@@ -5,4 +5,7 @@
 		<email>hendrik@consetetur.de</email>
 		<name>Hendrik v. Raven (lorem_ipsum)</name>
 	</maintainer>
+	<use>
+		<flag name="clipboard">Copy magnet links to the clipboard.</flag>
+	</use>
 </pkgmetadata>

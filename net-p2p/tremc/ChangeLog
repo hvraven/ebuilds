@@ -1,3 +1,7 @@
+  24 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  metadata.xml, tremc-0_p20170122.ebuild:
+  net-p2p/tremc: add clipboard support
+
 *tremc-0_p20170122 (24 Apr 2017)
 
   24 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
