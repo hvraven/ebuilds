@@ -14,9 +14,10 @@ EGIT_REPO_URI="https://github.com/louipc/tremc.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="geoip"
+IUSE="clipboard geoip"
 
 RDEPEND="${PYTHON_DEPS}
+	clipboard? ( dev-python/xerox[${PYTHON_USEDEP}] )
 	geoip? ( dev-python/geoip-python[$PYTHON_USEDEP] )
 "
 
