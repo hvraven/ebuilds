@@ -1,0 +1,5 @@
+*openrct2-title-sequences-0.0.5 (08 May 2017)
+
+  08 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +openrct2-title-sequences-0.0.5.ebuild:
+  games-strategy/openrct2-title-sequences: new ebuild
