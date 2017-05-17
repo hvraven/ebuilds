@@ -1,3 +1,7 @@
+  17 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  tremc-0_pre20170122.ebuild, tremc-9999.ebuild:
+  net-p2p/tremc: add python3.6 to PYTHON_COMPAT
+
 *tremc-0_pre20170122 (26 Apr 2017)
 
   26 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
