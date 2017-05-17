@@ -5,4 +5,7 @@
 		<email>hendrik@consetetur.de</email>
 		<name>Hendrik v. Raven (lorem_ipsum)</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">rndusr/stig</remote-id>
+	</upstream>
 </pkgmetadata>

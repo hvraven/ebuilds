@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_5 )
+PYTHON_COMPAT=( python3_{5,6} )
 inherit distutils-r1
 
 DESCRIPTION="TUI and CLI for the BitTorrent client Transmission"
@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="geoip test"
 
 RDEPEND=">=dev-python/urwid-1.3.0[${PYTHON_USEDEP}]
-	>=dev-python/urwidtrees-1.0.3[${PYTHON_USEDEP}]
+	>=dev-python/urwidtrees-1.0.3_pre0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-0.22.5[${PYTHON_USEDEP}]
 	dev-python/appdirs[${PYTHON_USEDEP}]
 	dev-python/blinker[${PYTHON_USEDEP}]
