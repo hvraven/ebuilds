@@ -1,0 +1,5 @@
+*pytest-helpers-namespace-2016.7.10 (18 May 2017)
+
+  18 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +pytest-helpers-namespace-2016.7.10.ebuild:
+  dev-python/pytest-helpers-namespace: new ebuild
