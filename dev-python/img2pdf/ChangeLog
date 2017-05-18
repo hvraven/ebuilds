@@ -1,0 +1,5 @@
+*img2pdf-0.2.3 (18 May 2017)
+
+  18 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +img2pdf-0.2.3.ebuild, +metadata.xml:
+  dev-python/img2pdf: new ebuild
