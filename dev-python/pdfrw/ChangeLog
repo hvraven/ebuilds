@@ -1,0 +1,5 @@
+*pdfrw-0.3 (18 May 2017)
+
+  18 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +pdfrw-0.3.ebuild:
+  dev-python/pdfrw: version bump  this release adds python3 support
