@@ -1,0 +1,5 @@
+*olefile-0.44 (28 May 2017)
+
+  28 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +olefile-0.44.ebuild:
+  dev-python/olefile: new ebuild
