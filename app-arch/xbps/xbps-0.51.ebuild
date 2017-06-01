@@ -37,7 +37,6 @@ src_configure() {
 	econf \
 		$(use_enable debug) \
 		$(use_enable doc api-docs) \
-		$(use_enable static) \
 		$(use_enable test tests) \
 		--verbose
 }
