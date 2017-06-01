@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/voidlinux/xbps.git"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug doc libressl test"
+IUSE="debug doc libressl static-libs test"
 
 RDEPEND=">=app-arch/libarchive-2.8.0
 	sys-libs/zlib
@@ -41,4 +41,10 @@ src_configure() {
 		$(use_enable doc api-docs) \
 		$(use_enable test tests) \
 		--verbose
+}
+
+src_install() {
+	default
+
+	use static-libs || rm "${D}/usr/$(get_libdir)/libxbps.a" || die
 }
