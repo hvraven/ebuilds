@@ -1,0 +1,6 @@
+*xbps-0.51 (01 Jun 2017)
+*xbps-9999 (01 Jun 2017)
+
+  01 Jun 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +xbps-0.51.ebuild, +xbps-9999.ebuild:
+  app-arch/xbps: new ebuild
