@@ -1,3 +1,9 @@
+*stig-0.7.3a (11 Jul 2017)
+
+  11 Jul 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +stig-0.7.3a.ebuild:
+  net-p2p/stig: version bump
+
   17 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   metadata.xml, stig-0.5.0a.ebuild, stig-0.6.0a.ebuild:
   net-p2p/stig: add python3.6 and correct urwidtrees dep
