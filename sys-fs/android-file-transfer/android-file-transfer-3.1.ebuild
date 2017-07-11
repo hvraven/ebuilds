@@ -6,7 +6,7 @@ EAPI=6
 inherit cmake-utils
 
 DESCRIPTION="MTP client with minimalistic UI"
-HOMEPAGE="https://github.com/whoozle/android-file-transfer-linux"
+HOMEPAGE="http://whoozle.github.io/android-file-transfer-linux/"
 SRC_URI="https://github.com/whoozle/android-file-transfer-linux/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
