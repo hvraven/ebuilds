@@ -1,3 +1,9 @@
+*android-file-transfer-3.2 (11 Jul 2017)
+
+  11 Jul 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +android-file-transfer-3.2.ebuild:
+  sys-fs/android-file-transfer: version bump
+
 *android-file-transfer-3.1 (13 Apr 2017)
 
   13 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
