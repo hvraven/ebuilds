@@ -5,6 +5,9 @@
 		<email>hendrik@consetetur.de</email>
 		<name>Hendrik v. Raven (lorem_ipsum)</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">whoozle/android-file-transfer-linux</remote-id>
+	</upstream>
 	<use>
 		<flag name="fuse">Build the fuse based filesystem wrapper</flag>
 		<flag name="libusb">Use libusb instead of the internal USB support</flag>
