@@ -1,4 +1,8 @@
   13 Aug 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  kipart-0.1.29.ebuild:
+  sci-electronics/kipart: add tests
+
+  13 Aug 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
   -kipart-0.1.24.ebuild:
   sci-electronics/kipart: drop old
 
