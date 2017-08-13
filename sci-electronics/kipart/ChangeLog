@@ -1,3 +1,7 @@
+  13 Aug 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  -kipart-0.1.24.ebuild:
+  sci-electronics/kipart: drop old
+
 *kipart-0.1.29 (13 Aug 2017)
 
   13 Aug 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
