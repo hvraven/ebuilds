@@ -1,0 +1,5 @@
+*cereal-1.2.2 (28 Sep 2017)
+
+  28 Sep 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +cereal-1.2.2.ebuild, +metadata.xml:
+  dev-cpp/cereal: new ebuild
