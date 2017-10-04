@@ -1,3 +1,7 @@
+  04 Oct 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  yubikey-personalization-gui-3.1.24-r1.ebuild:
+  sys-auth/yubikey-personalization-gui: add missing dep
+
 *yubikey-personalization-gui-3.1.24-r1 (04 Oct 2017)
 
   04 Oct 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

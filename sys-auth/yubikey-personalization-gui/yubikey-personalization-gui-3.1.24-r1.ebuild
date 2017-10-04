@@ -18,6 +18,7 @@ RDEPEND="
 	>=sys-auth/ykpers-1.14.0
 	>=sys-auth/libyubikey-1.6
 	dev-qt/qtcore:5
+	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
 	dev-libs/glib:2
 	virtual/libusb:1"
