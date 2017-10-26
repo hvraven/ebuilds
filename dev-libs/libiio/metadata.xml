@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<longdescription lang="en">
+libiio is used to interface to the Linux Industrial Input/Output (IIO) Subsystem. The Linux IIO subsystem is intended to provide support for devices that in some sense are analog to digital or digital to analog converters (ADCs, DACs). This includes, but is not limited to ADCs, Accelerometers, Gyros, IMUs, Capacitance to Digital Converters (CDCs), Pressure Sensors, Color, Light and Proximity Sensors, Temperature Sensors, Magnetometers, DACs, DDS (Direct Digital Synthesis), PLLs (Phase Locked Loops), Variable/Programmable Gain Amplifiers (VGA, PGA), and RF transceivers. You can use libiio natively on an embedded Linux target (local mode), or use libiio to communicate remotely to that same target from a host Linux, Windows or MAC over USB or Ethernet or Serial.
+	</longdescription>
+	<use>
+		<flag name='aio'>Enable async I/O support in iiod</flag>
+		<flag name='config'>Enable local configuration in /etc/libiio.ini</flag>
+		<flag name='daemon'>Build the IIO daemon</flag>
+		<flag name='dotnet'>Build bindings for the C# language</flag>
+		<flag name='local'>Enable the local backend</flag>
+		<flag name='remote'>Enable the remote backend</flag>
+		<flag name='serial'>Enable the serial backend</flag>
+		<flag name='util'>Build tools to test IIO devices</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">analogdevicesinc/libiio</remote-id>
+	</upstream>
+</pkgmetadata>
