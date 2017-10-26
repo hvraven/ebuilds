@@ -1,0 +1,5 @@
+*oce-0.18.2 (24 Sep 2017)
+
+  24 Sep 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +metadata.xml, +oce-0.18.2.ebuild:
+  sci-libs/oce: new ebuild

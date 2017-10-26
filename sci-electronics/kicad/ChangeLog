@@ -1,0 +1,5 @@
+*kicad-9999 (24 Sep 2017)
+
+  24 Sep 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +kicad-9999.ebuild, +metadata.xml:
+  sci-electronics/kicad: new ebuild
