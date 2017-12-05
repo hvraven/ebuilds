@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>hendrik@consetetur.de</email>
+		<name>Hendrik v. Raven (lorem_ipsum)</name>
+	</maintainer>
+	<longdescription lang="en">
+		ELBE is the E.mbedded L.inux B.uild E.nvironment. It can be used
+		to build embedded Linux Rootfilesystems based on Debian packages.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">Linutronix/elbe</remote-id>
+	</upstream>
+</pkgmetadata>
