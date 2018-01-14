@@ -1,0 +1,5 @@
+*kas-0.16.1 (14 Jan 2018)
+
+  14 Jan 2018; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  +kas-0.16.1.ebuild, +metadata.xml:
+  dev-embedded/kas: new ebuild
