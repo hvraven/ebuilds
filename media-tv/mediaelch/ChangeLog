@@ -1,3 +1,7 @@
+  02 Feb 2018; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
+  mediaelch-2.4.2.ebuild:
+  media-tv/mediaelch: update qazip qt5 dependency
+
 *mediaelch-2.4.2 (21 Apr 2017)
 
   21 Apr 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>

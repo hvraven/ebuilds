@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -15,7 +15,7 @@ KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="media-libs/libmediainfo
-	dev-libs/quazip[qt5]
+	dev-libs/quazip[qt5(+)]
 	dev-qt/qtconcurrent:5
 	dev-qt/qtcore:5
 	dev-qt/qtdeclarative:5[widgets]
