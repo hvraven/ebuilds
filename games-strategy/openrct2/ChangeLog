@@ -1,6 +1,0 @@
-*openrct2-0.0.7 (08 May 2017)
-
-  08 May 2017; Hendrik v. Raven (lorem_ipsum) <hendrik@consetetur.de>
-  +files/openrct2-0.0.7-remove-external-gtest.patch, +metadata.xml,
-  +openrct2-0.0.7.ebuild:
-  games-strategy/openrct2: new ebuild
